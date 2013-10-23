@@ -1,0 +1,3 @@
+NET "i0" LOC = "F12"
+NET "i1" LOC = "G12"
+NET "EQ" LOC = "k12"

@@ -1,0 +1,4 @@
+EN eq1 NULL C:/SourceCode/fpga_vhdl_src/ch02/list_ch02_01_eq1.vhd sub00/vhpl00 1368121143
+EN eq2 NULL C:/SourceCode/fpga_vhdl_src/ch02/list_ch02_02_eq2.vhd sub00/vhpl02 1368121145
+AR eq1 sop_arch C:/SourceCode/fpga_vhdl_src/ch02/list_ch02_01_eq1.vhd sub00/vhpl01 1368121144
+AR eq2 struc_arch C:/SourceCode/fpga_vhdl_src/ch02/list_ch02_02_eq2.vhd sub00/vhpl03 1368121146

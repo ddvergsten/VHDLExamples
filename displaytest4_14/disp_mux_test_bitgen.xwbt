@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\SourceCode\fpga_vhdl_src\displaytest4_14\disp_mux_test.ncd
+OUTFILE=C:\SourceCode\fpga_vhdl_src\displaytest4_14\disp_mux_test.bit
+FAMILY=Spartan3
+PART=xc3s200-4ft256
+WORKINGDIR=C:\SourceCode\fpga_vhdl_src\displaytest4_14
+LICENSE=WebPack
+USER_INFO=210219815_0_0_414

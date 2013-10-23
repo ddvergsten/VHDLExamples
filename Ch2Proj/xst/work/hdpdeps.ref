@@ -1,0 +1,12 @@
+V3 6
+FL C:/SourceCode/fpga_vhdl_src/ch02/list_ch02_01_eq1.vhd 2013/03/12.12:23:18 P.49d
+EN work/eq1 1368121143 FL C:/SourceCode/fpga_vhdl_src/ch02/list_ch02_01_eq1.vhd \
+      PB ieee/std_logic_1164 1354696159
+AR work/eq1/sop_arch 1368121144 \
+      FL C:/SourceCode/fpga_vhdl_src/ch02/list_ch02_01_eq1.vhd EN work/eq1 1368121143
+FL C:/SourceCode/fpga_vhdl_src/ch02/list_ch02_02_eq2.vhd 2013/03/12.12:23:19 P.49d
+EN work/eq2 1368121145 FL C:/SourceCode/fpga_vhdl_src/ch02/list_ch02_02_eq2.vhd \
+      PB ieee/std_logic_1164 1354696159
+AR work/eq2/struc_arch 1368121146 \
+      FL C:/SourceCode/fpga_vhdl_src/ch02/list_ch02_02_eq2.vhd EN work/eq2 1368121145 \
+      AR work/eq1/sop_arch 1368121144

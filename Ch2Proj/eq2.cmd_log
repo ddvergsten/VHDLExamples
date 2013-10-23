@@ -1,0 +1,18 @@
+xst -intstyle ise -ifn "C:/SourceCode/fpga_vhdl_src/Ch2Proj/eq2.xst" -ofn "C:/SourceCode/fpga_vhdl_src/Ch2Proj/eq2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc eq2.ucf -p xc3s200-pq208-4 eq2.ngc eq2.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc eq2.ucf -p xc3s200-pq208-4 eq2.ngc eq2.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o eq2_map.ncd eq2.ngd eq2.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc eq2.ucf -p xc3s200-pq208-4 eq2.ngc eq2.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o eq2_map.ncd eq2.ngd eq2.pcf 
+xst -intstyle ise -ifn "C:/SourceCode/fpga_vhdl_src/Ch2Proj/eq2.xst" -ofn "C:/SourceCode/fpga_vhdl_src/Ch2Proj/eq2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc eq2.ucf -p xc3s200-ft256-4 eq2.ngc eq2.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o eq2_map.ncd eq2.ngd eq2.pcf 
+par -w -intstyle ise -ol high -t 1 eq2_map.ncd eq2.ncd eq2.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml eq2.twx eq2.ncd -o eq2.twr eq2.pcf -ucf eq2.ucf 
+bitgen -intstyle ise -f eq2.ut eq2.ncd 
+xst -intstyle ise -ifn "C:/SourceCode/fpga_vhdl_src/Ch2Proj/eq2.xst" -ofn "C:/SourceCode/fpga_vhdl_src/Ch2Proj/eq2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc eq2.ucf -p xc3s200-ft256-4 eq2.ngc eq2.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o eq2_map.ncd eq2.ngd eq2.pcf 
+par -w -intstyle ise -ol high -t 1 eq2_map.ncd eq2.ncd eq2.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml eq2.twx eq2.ncd -o eq2.twr eq2.pcf -ucf eq2.ucf 
+bitgen -intstyle ise -f eq2.ut eq2.ncd 

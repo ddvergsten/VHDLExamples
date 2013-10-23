@@ -1,0 +1,8 @@
+Release 14.4 Drc P.49d (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Thu May 09 12:39:33 2013
+
+drc -z eq2.ncd eq2.pcf
+
+DRC detected 0 errors and 0 warnings.

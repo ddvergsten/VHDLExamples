@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v14.4 (64-bit)
+# Build 222254 by xbuild on Tue Dec 18 05:21:09 MST 2012
+# Start of session at: Thu Aug 29 10:13:12 2013
+# Process ID: 6960
+# Log file: C:/SourceCode/fpga_vhdl_src/displaytest4_14/planAhead_run_1/planAhead.log
+# Journal file: C:/SourceCode/fpga_vhdl_src/displaytest4_14/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/SourceCode/fpga_vhdl_src/displaytest4_14/pa.fromNetlist.tcl

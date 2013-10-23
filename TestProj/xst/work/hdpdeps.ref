@@ -1,0 +1,6 @@
+V3 3
+FL C:/SourceCode/fpga_vhdl_src/ch01/list_ch01_01_eq1.vhd 2013/03/12.12:23:18 P.49d
+EN work/eq1 1363963382 FL C:/SourceCode/fpga_vhdl_src/ch01/list_ch01_01_eq1.vhd \
+      PB ieee/std_logic_1164 1354696159
+AR work/eq1/sop_arch 1363963383 \
+      FL C:/SourceCode/fpga_vhdl_src/ch01/list_ch01_01_eq1.vhd EN work/eq1 1363963382

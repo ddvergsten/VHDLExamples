@@ -1,0 +1,4 @@
+EN disp_mux_test NULL C:/SourceCode/fpga_vhdl_src/ch04/list_ch04_14_disp_test.vhd sub00/vhpl02 1368198432
+AR disp_mux arch C:/SourceCode/fpga_vhdl_src/ch04/list_ch04_13_disp_mux.vhd sub00/vhpl01 1368198431
+AR disp_mux_test arch C:/SourceCode/fpga_vhdl_src/ch04/list_ch04_14_disp_test.vhd sub00/vhpl03 1368198433
+EN disp_mux NULL C:/SourceCode/fpga_vhdl_src/ch04/list_ch04_13_disp_mux.vhd sub00/vhpl00 1368198430

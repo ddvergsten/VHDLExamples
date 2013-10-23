@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\SourceCode\fpga_vhdl_src\TestProj\eq1.ncd
+OUTFILE=C:\SourceCode\fpga_vhdl_src\TestProj\eq1.bit
+FAMILY=Spartan3
+PART=xc3s200-4pq208
+WORKINGDIR=C:\SourceCode\fpga_vhdl_src\TestProj
+LICENSE=WebPack
+USER_INFO=210219815_0_0_414
