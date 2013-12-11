@@ -1,0 +1,18 @@
+V3 7
+FL C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/ch03/list_ch03_16_17_shift.vhd 2013/03/12.12:23:18 P.49d
+EN work/barrel_shifter 1382628501 \
+      FL C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/ch03/list_ch03_16_17_shift.vhd \
+      PB ieee/std_logic_1164 1354696159
+AR work/barrel_shifter/sel_arch 1382628502 \
+      FL C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/ch03/list_ch03_16_17_shift.vhd \
+      EN work/barrel_shifter 1382628501
+AR work/barrel_shifter/multi_stage_arch 1382628503 \
+      FL C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/ch03/list_ch03_16_17_shift.vhd \
+      EN work/barrel_shifter 1382628501
+FL C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/ch03/list_ch03_18_shift_test.vhd 2013/03/12.12:23:18 P.49d
+EN work/shifter_test 1382628504 \
+      FL C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/ch03/list_ch03_18_shift_test.vhd \
+      PB ieee/std_logic_1164 1354696159 PB ieee/NUMERIC_STD 1354696164
+AR work/shifter_test/arch 1382628505 \
+      FL C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/ch03/list_ch03_18_shift_test.vhd \
+      EN work/shifter_test 1382628504 AR work/barrel_shifter/multi_stage_arch 1382628503

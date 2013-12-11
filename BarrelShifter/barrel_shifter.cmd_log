@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/BarrelShifter/barrel_shifter.xst" -ofn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/BarrelShifter/barrel_shifter.syr" 

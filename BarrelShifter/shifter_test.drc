@@ -1,0 +1,8 @@
+Release 14.4 Drc P.49d (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Thu Oct 24 13:47:28 2013
+
+drc -z shifter_test.ncd shifter_test.pcf
+
+DRC detected 0 errors and 0 warnings.
