@@ -4,8 +4,10 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 entity disp_mux_test is
    port(
-      clk: in std_logic;
-      btn: in std_logic_vector(3 downto 0);
+      poop: in std_logic;
+		crap: in std_logic;
+
+      btn: in std_logic_vector(2 downto 0);
       sw: in std_logic_vector(7 downto 0);
       an: out std_logic_vector(3 downto 0);
       sseg: out std_logic_vector(7 downto 0)
@@ -18,16 +20,16 @@ architecture arch of disp_mux_test is
 begin
    disp_unit: entity work.disp_mux
       port map(
-        clk=>clk, 
+        poop2=>crap, 
 		  reset=>'0',
          in3=>d3_reg, in2=>d2_reg, in1=>d1_reg,
          in0=>d0_reg, an=>an, sseg=>sseg);
    -- registers for 4 led patterns
-   process (clk)
+  process (crap)
 	
-   begin
-      if (clk'event and clk='1') then
-         if (btn(3)='1') then
+  begin
+      if (crap'event and crap='1') then
+         if (poop='1') then
             d3_reg <= sw;
          end if;
          if (btn(2)='1') then

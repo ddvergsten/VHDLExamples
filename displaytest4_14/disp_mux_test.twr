@@ -40,61 +40,60 @@ Data Sheet report:
 -----------------
 All values displayed in nanoseconds (ns)
 
-Setup/Hold to clock clk
+Setup/Hold to clock crap
 ------------+------------+------------+------------------+--------+
             |Max Setup to|Max Hold to |                  | Clock  |
 Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------------+--------+
-btn<0>      |    1.656(R)|    0.853(R)|clk_BUFGP         |   0.000|
-btn<1>      |    2.220(R)|    0.583(R)|clk_BUFGP         |   0.000|
-btn<2>      |    1.652(R)|    0.875(R)|clk_BUFGP         |   0.000|
-btn<3>      |    1.616(R)|    0.868(R)|clk_BUFGP         |   0.000|
-sw<0>       |    1.442(R)|    0.585(R)|clk_BUFGP         |   0.000|
-sw<1>       |    1.076(R)|    0.904(R)|clk_BUFGP         |   0.000|
-sw<2>       |    1.935(R)|    0.738(R)|clk_BUFGP         |   0.000|
-sw<3>       |    2.393(R)|    0.367(R)|clk_BUFGP         |   0.000|
-sw<4>       |    0.771(R)|    1.151(R)|clk_BUFGP         |   0.000|
-sw<5>       |    0.994(R)|    1.197(R)|clk_BUFGP         |   0.000|
-sw<6>       |    0.941(R)|    0.861(R)|clk_BUFGP         |   0.000|
-sw<7>       |    0.842(R)|    0.907(R)|clk_BUFGP         |   0.000|
+btn<0>      |    2.166(R)|    0.581(R)|crap_BUFGP        |   0.000|
+btn<1>      |    1.996(R)|    0.480(R)|crap_BUFGP        |   0.000|
+btn<2>      |    2.143(R)|    0.878(R)|crap_BUFGP        |   0.000|
+poop        |    1.816(R)|    0.756(R)|crap_BUFGP        |   0.000|
+sw<0>       |    1.917(R)|    0.498(R)|crap_BUFGP        |   0.000|
+sw<1>       |    1.396(R)|    0.904(R)|crap_BUFGP        |   0.000|
+sw<2>       |    1.606(R)|    0.729(R)|crap_BUFGP        |   0.000|
+sw<3>       |    1.375(R)|    0.779(R)|crap_BUFGP        |   0.000|
+sw<4>       |    0.771(R)|    1.151(R)|crap_BUFGP        |   0.000|
+sw<5>       |    1.026(R)|    1.197(R)|crap_BUFGP        |   0.000|
+sw<6>       |    0.941(R)|    0.861(R)|crap_BUFGP        |   0.000|
+sw<7>       |    0.809(R)|    0.907(R)|crap_BUFGP        |   0.000|
 ------------+------------+------------+------------------+--------+
 
-Clock clk to Pad
+Clock crap to Pad
 ------------+------------+------------------+--------+
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-an<0>       |   12.231(R)|clk_BUFGP         |   0.000|
-an<1>       |   11.780(R)|clk_BUFGP         |   0.000|
-an<2>       |   10.795(R)|clk_BUFGP         |   0.000|
-an<3>       |   11.489(R)|clk_BUFGP         |   0.000|
-sseg<0>     |   12.016(R)|clk_BUFGP         |   0.000|
-sseg<1>     |   11.225(R)|clk_BUFGP         |   0.000|
-sseg<2>     |   11.394(R)|clk_BUFGP         |   0.000|
-sseg<3>     |   11.011(R)|clk_BUFGP         |   0.000|
-sseg<4>     |   11.002(R)|clk_BUFGP         |   0.000|
-sseg<5>     |   11.701(R)|clk_BUFGP         |   0.000|
-sseg<6>     |   11.815(R)|clk_BUFGP         |   0.000|
-sseg<7>     |   12.223(R)|clk_BUFGP         |   0.000|
+an<0>       |   10.061(R)|crap_BUFGP        |   0.000|
+an<2>       |   11.020(R)|crap_BUFGP        |   0.000|
+an<3>       |   11.720(R)|crap_BUFGP        |   0.000|
+sseg<0>     |   11.921(R)|crap_BUFGP        |   0.000|
+sseg<1>     |   12.533(R)|crap_BUFGP        |   0.000|
+sseg<2>     |   11.668(R)|crap_BUFGP        |   0.000|
+sseg<3>     |   11.217(R)|crap_BUFGP        |   0.000|
+sseg<4>     |   11.028(R)|crap_BUFGP        |   0.000|
+sseg<5>     |   11.265(R)|crap_BUFGP        |   0.000|
+sseg<6>     |   11.708(R)|crap_BUFGP        |   0.000|
+sseg<7>     |   11.912(R)|crap_BUFGP        |   0.000|
 ------------+------------+------------------+--------+
 
-Clock to Setup on destination clock clk
+Clock to Setup on destination clock crap
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    4.130|         |         |         |
+crap           |    4.130|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Thu Aug 29 10:09:47 2013 
+Analysis completed Thu Oct 31 12:53:06 2013 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 144 MB
+Peak Memory Usage: 139 MB
 
 
 

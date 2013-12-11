@@ -1,7 +1,7 @@
 Release 14.4 Drc P.49d (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-Thu Aug 29 10:13:32 2013
+Thu Oct 31 12:53:12 2013
 
 drc -z disp_mux_test.ncd disp_mux_test.pcf
 

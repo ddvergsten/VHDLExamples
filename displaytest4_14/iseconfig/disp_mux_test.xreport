@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2013-08-29T10:08:55</DateModified>
+  <DateModified>2013-12-11T11:30:46</DateModified>
   <ModuleName>disp_mux_test</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/SourceCode/fpga_vhdl_src/displaytest4_14/iseconfig/disp_mux_test.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/SourceCode/fpga_vhdl_src/displaytest4_14\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/displaytest4_14/iseconfig/disp_mux_test.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/displaytest4_14\</ImplementationReportsDirectory>
   <DateInitialized>2013-05-09T12:40:29</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

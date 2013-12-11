@@ -1,7 +1,7 @@
 Release 14.4 - par P.49d (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-Thu Aug 29 10:09:43 2013
+Thu Oct 31 12:53:03 2013
 
 
 # NOTE: This file is designed to be imported into a spreadsheet program
@@ -192,7 +192,7 @@ L10|||VCCO_4|||4|||||2.50||||
 L11|||GND||||||||||||
 L12||DIFFM|IO_L23P_3/VREF_3|UNUSED||3|||||||||
 L13|btn<2>|IOB|IO_L21N_3|INPUT|LVCMOS25*|3||||NONE||LOCATED|NO|NONE|
-L14|btn<3>|IOB|IO_L22P_3|INPUT|LVCMOS25*|3||||NONE||LOCATED|NO|NONE|
+L14|poop|IOB|IO_L22P_3|INPUT|LVCMOS25*|3||||NONE||LOCATED|NO|NONE|
 L15||DIFFS|IO_L22N_3|UNUSED||3|||||||||
 L16|||VCCAUX||||||||2.5||||
 M1||DIFFM|IO_L20P_6|UNUSED||6|||||||||
@@ -267,7 +267,7 @@ T5||IOB|IO|UNUSED||5|||||||||
 T6|||VCCAUX||||||||2.5||||
 T7||DIFFS|IO_L31N_5/D4|UNUSED||5|||||||||
 T8||IOB|IO/VREF_5|UNUSED||5|||||||||
-T9|clk|IOB|IO_L32P_4/GCLK0|INPUT|LVCMOS25*|4||||NONE||UNLOCATED|NO|NONE|
+T9|crap|IOB|IO_L32P_4/GCLK0|INPUT|LVCMOS25*|4||||NONE||UNLOCATED|NO|NONE|
 T10||IOB|IO/VREF_4|UNUSED||4|||||||||
 T11|||VCCAUX||||||||2.5||||
 T12||IOB|IO|UNUSED||4|||||||||

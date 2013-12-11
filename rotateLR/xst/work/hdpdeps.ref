@@ -1,0 +1,11 @@
+V3 4
+FL C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrelShifter.vhd 2013/12/11.11:53:27 P.49d
+EN work/barrel_shifter 1386784411 \
+      FL C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrelShifter.vhd \
+      PB ieee/std_logic_1164 1354696159
+AR work/barrel_shifter/sel_arch 1386784412 \
+      FL C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrelShifter.vhd \
+      EN work/barrel_shifter 1386784411
+AR work/barrel_shifter/multi_stage_arch 1386784413 \
+      FL C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrelShifter.vhd \
+      EN work/barrel_shifter 1386784411

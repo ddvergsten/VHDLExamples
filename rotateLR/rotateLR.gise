@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="rotateLR.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="barrelShifter.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="barrelShifter.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="barrelShifter.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="barrelShifter.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="barrelShifter.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="barrelShifter_summary.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="barrelShifter_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="barrelShifter_xst.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="barrel_shifter.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="barrel_shifter.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="barrel_shifter.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="barrel_shifter.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="barrel_shifter.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="barrel_shifter.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="barrel_shifter.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="barrel_shifter.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="barrel_shifter.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="barrel_shifter.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="barrel_shifter.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="barrel_shifter.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="barrel_shifter.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="barrel_shifter.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="barrel_shifter.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="barrel_shifter.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="barrel_shifter.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="barrel_shifter.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="barrel_shifter.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="barrel_shifter_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="barrel_shifter_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="barrel_shifter_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="barrel_shifter_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="barrel_shifter_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="barrel_shifter_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="barrel_shifter_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="barrel_shifter_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="barrel_shifter_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="barrel_shifter_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="barrel_shifter_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="barrel_shifter_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="barrel_shifter_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="barrel_shifter_usage.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="barrel_shifter_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="barrel_shifter_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1386783507" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1386783507">
+      <status xil_pn:value="SuccessfullyRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1386783541" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="8852543999306106677" xil_pn:start_ts="1386783541">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1386783541" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="1557586935436091181" xil_pn:start_ts="1386783541">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1386783507" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1386783507">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1386783541" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="2109989712584589693" xil_pn:start_ts="1386783541">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1386783507" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="1110319057727724918" xil_pn:start_ts="1386783507">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1386783541" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-5848141824438309897" xil_pn:start_ts="1386783541">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1386784416" xil_pn:in_ck="-2080961804982016195" xil_pn:name="TRANEXT_xstsynthesize_spartan3" xil_pn:prop_ck="8126628693169613953" xil_pn:start_ts="1386784409">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="barrel_shifter.lso"/>
+      <outfile xil_pn:name="barrel_shifter.ngc"/>
+      <outfile xil_pn:name="barrel_shifter.ngr"/>
+      <outfile xil_pn:name="barrel_shifter.prj"/>
+      <outfile xil_pn:name="barrel_shifter.stx"/>
+      <outfile xil_pn:name="barrel_shifter.syr"/>
+      <outfile xil_pn:name="barrel_shifter.xst"/>
+      <outfile xil_pn:name="barrel_shifter_vhdl.prj"/>
+      <outfile xil_pn:name="barrel_shifter_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1386783872" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-1301034564971273048" xil_pn:start_ts="1386783872">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1386784423" xil_pn:in_ck="5738546607458875186" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-4071898833542990133" xil_pn:start_ts="1386784418">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="barrel_shifter.bld"/>
+      <outfile xil_pn:name="barrel_shifter.ngd"/>
+      <outfile xil_pn:name="barrel_shifter_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1386784427" xil_pn:in_ck="5738546607458875187" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-684010993939208968" xil_pn:start_ts="1386784423">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="barrel_shifter.pcf"/>
+      <outfile xil_pn:name="barrel_shifter_map.map"/>
+      <outfile xil_pn:name="barrel_shifter_map.mrp"/>
+      <outfile xil_pn:name="barrel_shifter_map.ncd"/>
+      <outfile xil_pn:name="barrel_shifter_map.ngm"/>
+      <outfile xil_pn:name="barrel_shifter_map.xrpt"/>
+      <outfile xil_pn:name="barrel_shifter_summary.xml"/>
+      <outfile xil_pn:name="barrel_shifter_usage.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1386784433" xil_pn:in_ck="-2126126972815857716" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="3333849164707216606" xil_pn:start_ts="1386784427">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <outfile xil_pn:name="barrel_shifter.ncd"/>
+      <outfile xil_pn:name="barrel_shifter.pad"/>
+      <outfile xil_pn:name="barrel_shifter.par"/>
+      <outfile xil_pn:name="barrel_shifter.ptwx"/>
+      <outfile xil_pn:name="barrel_shifter.unroutes"/>
+      <outfile xil_pn:name="barrel_shifter.xpi"/>
+      <outfile xil_pn:name="barrel_shifter_pad.csv"/>
+      <outfile xil_pn:name="barrel_shifter_pad.txt"/>
+      <outfile xil_pn:name="barrel_shifter_par.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1386784433" xil_pn:in_ck="5738546607458875055" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1386784430">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <outfile xil_pn:name="barrel_shifter.twr"/>
+      <outfile xil_pn:name="barrel_shifter.twx"/>
+    </transform>
+  </transforms>
+
+</generated_project>

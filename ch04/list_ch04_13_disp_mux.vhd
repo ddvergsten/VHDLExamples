@@ -4,7 +4,7 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 entity disp_mux is
    port(
-      clk, reset: in std_logic;
+      poop2, reset: in std_logic;
       in3, in2, in1, in0: in std_logic_vector(7 downto 0);
       an: out std_logic_vector(3 downto 0);
       sseg: out std_logic_vector(7 downto 0)
@@ -18,11 +18,11 @@ architecture arch of disp_mux is
    signal sel: std_logic_vector(1 downto 0);
 begin
    -- register
-   process(clk,reset)
+   process(poop2,reset)
    begin
       if reset='1' then
          q_reg <= (others=>'0');
-      elsif (clk'event and clk='1') then
+      elsif (poop2'event and poop2='1') then
          q_reg <= q_next;
       end if;
    end process;
@@ -40,7 +40,7 @@ begin
             an <= "1110";
             sseg <= in0;
          when "01" =>
-            an <= "1101";
+            an <= "1110";
             sseg <= in1;
          when "10" =>
             an <= "1011";
