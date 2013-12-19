@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\ddvergsten\Documents\GitHub\VHDLExamples\rotateLR\barrel_shifter.ncd
+OUTFILE=C:\Users\ddvergsten\Documents\GitHub\VHDLExamples\rotateLR\barrel_shifter.bit
+FAMILY=Spartan3
+PART=xc3s200-4ft256
+WORKINGDIR=C:\Users\ddvergsten\Documents\GitHub\VHDLExamples\rotateLR
+LICENSE=WebPack
+USER_INFO=210219815_0_0_414

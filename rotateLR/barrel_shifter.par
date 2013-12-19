@@ -1,7 +1,7 @@
 Release 14.4 par P.49d (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-BUTTERNUT::  Wed Dec 11 11:53:47 2013
+BUTTERNUT::  Thu Dec 19 12:41:41 2013
 
 par -w -intstyle ise -ol high -t 1 barrel_shifter_map.ncd barrel_shifter.ncd
 barrel_shifter.pcf 
@@ -132,7 +132,7 @@ All signals are completely routed.
 Total REAL time to PAR completion: 1 secs 
 Total CPU time to PAR completion: 1 secs 
 
-Peak Memory Usage:  234 MB
+Peak Memory Usage:  237 MB
 
 Placement: Completed - No errors found.
 Routing: Completed - No errors found.

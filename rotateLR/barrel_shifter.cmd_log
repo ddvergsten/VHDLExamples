@@ -14,3 +14,51 @@ ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-ft256-4 barrel_shift
 map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o barrel_shifter_map.ncd barrel_shifter.ngd barrel_shifter.pcf 
 par -w -intstyle ise -ol high -t 1 barrel_shifter_map.ncd barrel_shifter.ncd barrel_shifter.pcf 
 trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml barrel_shifter.twx barrel_shifter.ncd -o barrel_shifter.twr barrel_shifter.pcf 
+xst -intstyle ise -ifn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrel_shifter.xst" -ofn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrel_shifter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-ft256-4 barrel_shifter.ngc barrel_shifter.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o barrel_shifter_map.ncd barrel_shifter.ngd barrel_shifter.pcf 
+par -w -intstyle ise -ol high -t 1 barrel_shifter_map.ncd barrel_shifter.ncd barrel_shifter.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml barrel_shifter.twx barrel_shifter.ncd -o barrel_shifter.twr barrel_shifter.pcf 
+xst -intstyle ise -ifn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrel_shifter.xst" -ofn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrel_shifter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-ft256-4 barrel_shifter.ngc barrel_shifter.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o barrel_shifter_map.ncd barrel_shifter.ngd barrel_shifter.pcf 
+par -w -intstyle ise -ol high -t 1 barrel_shifter_map.ncd barrel_shifter.ncd barrel_shifter.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml barrel_shifter.twx barrel_shifter.ncd -o barrel_shifter.twr barrel_shifter.pcf 
+xst -intstyle ise -ifn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrel_shifter.xst" -ofn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrel_shifter.syr" 
+xst -intstyle ise -ifn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrel_shifter.xst" -ofn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrel_shifter.syr" 
+xst -intstyle ise -ifn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrel_shifter.xst" -ofn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrel_shifter.syr" 
+xst -intstyle ise -ifn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrel_shifter.xst" -ofn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrel_shifter.syr" 
+xst -intstyle ise -ifn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrel_shifter.xst" -ofn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrel_shifter.syr" 
+xst -intstyle ise -ifn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrel_shifter.xst" -ofn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrel_shifter.syr" 
+xst -intstyle ise -ifn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrel_shifter.xst" -ofn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrel_shifter.syr" 
+xst -intstyle ise -ifn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrel_shifter.xst" -ofn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrel_shifter.syr" 
+xst -intstyle ise -ifn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrel_shifter.xst" -ofn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrel_shifter.syr" 
+xst -intstyle ise -ifn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrel_shifter.xst" -ofn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrel_shifter.syr" 
+xst -intstyle ise -ifn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrel_shifter.xst" -ofn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrel_shifter.syr" 
+xst -intstyle ise -ifn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrel_shifter.xst" -ofn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrel_shifter.syr" 
+xst -intstyle ise -ifn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrel_shifter.xst" -ofn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrel_shifter.syr" 
+xst -intstyle ise -ifn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrel_shifter.xst" -ofn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrel_shifter.syr" 
+xst -intstyle ise -ifn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrel_shifter.xst" -ofn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrel_shifter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-ft256-4 barrel_shifter.ngc barrel_shifter.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o barrel_shifter_map.ncd barrel_shifter.ngd barrel_shifter.pcf 
+par -w -intstyle ise -ol high -t 1 barrel_shifter_map.ncd barrel_shifter.ncd barrel_shifter.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml barrel_shifter.twx barrel_shifter.ncd -o barrel_shifter.twr barrel_shifter.pcf 
+xst -intstyle ise -ifn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrel_shifter.xst" -ofn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrel_shifter.syr" 
+xst -intstyle ise -ifn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrel_shifter.xst" -ofn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrel_shifter.syr" 
+xst -intstyle ise -ifn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrel_shifter.xst" -ofn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrel_shifter.syr" 
+xst -intstyle ise -ifn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrel_shifter.xst" -ofn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrel_shifter.syr" 
+xst -intstyle ise -ifn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrel_shifter.xst" -ofn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrel_shifter.syr" 
+xst -intstyle ise -ifn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrel_shifter.xst" -ofn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrel_shifter.syr" 
+xst -intstyle ise -ifn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrel_shifter.xst" -ofn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrel_shifter.syr" 
+xst -intstyle ise -ifn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrel_shifter.xst" -ofn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrel_shifter.syr" 
+xst -intstyle ise -ifn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrel_shifter.xst" -ofn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrel_shifter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-ft256-4 barrel_shifter.ngc barrel_shifter.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o barrel_shifter_map.ncd barrel_shifter.ngd barrel_shifter.pcf 
+par -w -intstyle ise -ol high -t 1 barrel_shifter_map.ncd barrel_shifter.ncd barrel_shifter.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml barrel_shifter.twx barrel_shifter.ncd -o barrel_shifter.twr barrel_shifter.pcf 
+xst -intstyle ise -ifn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrel_shifter.xst" -ofn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrel_shifter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-ft256-4 barrel_shifter.ngc barrel_shifter.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o barrel_shifter_map.ncd barrel_shifter.ngd barrel_shifter.pcf 
+par -w -intstyle ise -ol high -t 1 barrel_shifter_map.ncd barrel_shifter.ncd barrel_shifter.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml barrel_shifter.twx barrel_shifter.ncd -o barrel_shifter.twr barrel_shifter.pcf 
+bitgen -intstyle ise -f barrel_shifter.ut barrel_shifter.ncd 

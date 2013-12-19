@@ -1,3 +1,5 @@
-EN barrel_shifter NULL C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrelShifter.vhd sub00/vhpl00 1386784411
-AR barrel_shifter sel_arch C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrelShifter.vhd sub00/vhpl01 1386784412
-AR barrel_shifter multi_stage_arch C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrelShifter.vhd sub00/vhpl02 1386784413
+EN barrel_shifter NULL C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrelShifter.vhd sub00/vhpl00 1387478642
+EN shift_test NULL C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrelTester.vhd sub00/vhpl03 1387478645
+AR barrel_shifter sel_arch C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrelShifter.vhd sub00/vhpl01 1387478643
+AR barrel_shifter multi_stage_arch C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrelShifter.vhd sub00/vhpl02 1387478644
+AR shift_test arch C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/rotateLR/barrelTester.vhd sub00/vhpl04 1387478646
