@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/ch04/binarycounter4_4/bin_counter_tb_isim_beh.exe" -prj "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/ch04/binarycounter4_4/bin_counter_tb_beh.prj" "work.bin_counter_tb" 

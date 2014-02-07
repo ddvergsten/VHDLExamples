@@ -1,0 +1,370 @@
+Release 14.4 - xst P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.32 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.32 secs
+ 
+--> Reading design: univ_bin_counter.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "univ_bin_counter.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "univ_bin_counter"
+Output Format                      : NGC
+Target Device                      : xc3s200-4-ft256
+
+---- Source Options
+Top Module Name                    : univ_bin_counter
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/ch04/list_ch04_10_bin_u.vhd" in Library work.
+Entity <univ_bin_counter> compiled.
+Entity <univ_bin_counter> (Architecture <arch>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <univ_bin_counter> in library <work> (architecture <arch>) with generics.
+	N = 8
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing generic Entity <univ_bin_counter> in library <work> (Architecture <arch>).
+	N = 8
+Entity <univ_bin_counter> analyzed. Unit <univ_bin_counter> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <univ_bin_counter>.
+    Related source file is "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/ch04/list_ch04_10_bin_u.vhd".
+    Found 8-bit register for signal <r_reg>.
+    Found 8-bit addsub for signal <r_reg$addsub0000>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <univ_bin_counter> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 8-bit addsub                                          : 1
+# Registers                                            : 1
+ 8-bit register                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 8-bit addsub                                          : 1
+# Registers                                            : 8
+ Flip-Flops                                            : 8
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <univ_bin_counter> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block univ_bin_counter, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 8
+ Flip-Flops                                            : 8
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : univ_bin_counter.ngr
+Top Level Output File Name         : univ_bin_counter
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 24
+
+Cell Usage :
+# BELS                             : 44
+#      LUT2                        : 5
+#      LUT3                        : 8
+#      LUT4                        : 22
+#      LUT4_D                      : 1
+#      LUT4_L                      : 4
+#      MUXF5                       : 4
+# FlipFlops/Latches                : 8
+#      FDCE                        : 8
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 23
+#      IBUF                        : 13
+#      OBUF                        : 10
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200ft256-4 
+
+ Number of Slices:                       21  out of   1920     1%  
+ Number of Slice Flip Flops:              8  out of   3840     0%  
+ Number of 4 input LUTs:                 40  out of   3840     1%  
+ Number of IOs:                          24
+ Number of bonded IOBs:                  24  out of    173    13%  
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 8     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset                              | IBUF                   | 8     |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 5.040ns (Maximum Frequency: 198.413MHz)
+   Minimum input arrival time before clock: 8.472ns
+   Maximum output required time after clock: 10.829ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 5.040ns (frequency: 198.413MHz)
+  Total number of paths / destination ports: 47 / 8
+-------------------------------------------------------------------------
+Delay:               5.040ns (Levels of Logic = 3)
+  Source:            r_reg_6 (FF)
+  Destination:       r_reg_7 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: r_reg_6 to r_reg_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             6   0.720   1.198  r_reg_6 (r_reg_6)
+     LUT4_L:I1->LO         1   0.551   0.126  Maddsub_r_reg_addsub0000_cy<5>1_SW2 (N29)
+     LUT4:I3->O            1   0.551   1.140  Maddsub_r_reg_addsub0000_cy<6>11_SW0 (N37)
+     LUT3:I0->O            1   0.551   0.000  r_reg_mux0000<0> (r_reg_mux0000<0>)
+     FDCE:D                    0.203          r_reg_7
+    ----------------------------------------
+    Total                      5.040ns (2.576ns logic, 2.464ns route)
+                                       (51.1% logic, 48.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 123 / 16
+-------------------------------------------------------------------------
+Offset:              8.472ns (Levels of Logic = 5)
+  Source:            en (PAD)
+  Destination:       r_reg_7 (FF)
+  Destination Clock: clk rising
+
+  Data Path: en to r_reg_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             7   0.821   1.405  en_IBUF (en_IBUF)
+     LUT2:I0->O           11   0.551   1.483  r_reg_mux00011 (r_reg_mux00011)
+     LUT4:I0->O            2   0.551   1.216  r_reg_mux0000<0>_SW2 (N26)
+     LUT4:I0->O            1   0.551   1.140  Maddsub_r_reg_addsub0000_cy<6>11_SW0 (N37)
+     LUT3:I0->O            1   0.551   0.000  r_reg_mux0000<0> (r_reg_mux0000<0>)
+     FDCE:D                    0.203          r_reg_7
+    ----------------------------------------
+    Total                      8.472ns (3.228ns logic, 5.244ns route)
+                                       (38.1% logic, 61.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 24 / 10
+-------------------------------------------------------------------------
+Offset:              10.829ns (Levels of Logic = 3)
+  Source:            r_reg_3 (FF)
+  Destination:       min_tick (PAD)
+  Source Clock:      clk rising
+
+  Data Path: r_reg_3 to min_tick
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             8   0.720   1.422  r_reg_3 (r_reg_3)
+     LUT4:I0->O            1   0.551   1.140  min_tick_cmp_eq000012 (min_tick_cmp_eq000012)
+     LUT2:I0->O            1   0.551   0.801  min_tick_cmp_eq000026 (min_tick_OBUF)
+     OBUF:I->O                 5.644          min_tick_OBUF (min_tick)
+    ----------------------------------------
+    Total                     10.829ns (7.466ns logic, 3.363ns route)
+                                       (68.9% logic, 31.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.95 secs
+ 
+--> 
+
+Total memory usage is 256420 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

@@ -1,0 +1,2 @@
+vhdl work "../list_ch04_10_bin_u.vhd"
+vhdl work "../list_ch04_12_bin_tb.vhd"

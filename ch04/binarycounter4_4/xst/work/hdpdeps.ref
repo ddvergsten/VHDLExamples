@@ -1,0 +1,8 @@
+V3 3
+FL C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/ch04/list_ch04_10_bin_u.vhd 2013/03/12.11:23:18 P.49d
+EN work/univ_bin_counter 1391785909 \
+      FL C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/ch04/list_ch04_10_bin_u.vhd \
+      PB ieee/std_logic_1164 1354696159 PB ieee/NUMERIC_STD 1354696164
+AR work/univ_bin_counter/arch 1391785910 \
+      FL C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/ch04/list_ch04_10_bin_u.vhd \
+      EN work/univ_bin_counter 1391785909
