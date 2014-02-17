@@ -1,0 +1,11 @@
+xst -intstyle ise -ifn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/ch04/stopwatch/stop_watch_test.xst" -ofn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/ch04/stopwatch/stop_watch_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-ft256-4 stop_watch_test.ngc stop_watch_test.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o stop_watch_test_map.ncd stop_watch_test.ngd stop_watch_test.pcf 
+par -w -intstyle ise -ol high -t 1 stop_watch_test_map.ncd stop_watch_test.ncd stop_watch_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml stop_watch_test.twx stop_watch_test.ncd -o stop_watch_test.twr stop_watch_test.pcf 
+xst -intstyle ise -ifn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/ch04/stopwatch/stop_watch_test.xst" -ofn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/ch04/stopwatch/stop_watch_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-ft256-4 stop_watch_test.ngc stop_watch_test.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o stop_watch_test_map.ncd stop_watch_test.ngd stop_watch_test.pcf 
+par -w -intstyle ise -ol high -t 1 stop_watch_test_map.ncd stop_watch_test.ncd stop_watch_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml stop_watch_test.twx stop_watch_test.ncd -o stop_watch_test.twr stop_watch_test.pcf 
+bitgen -intstyle ise -f stop_watch_test.ut stop_watch_test.ncd 

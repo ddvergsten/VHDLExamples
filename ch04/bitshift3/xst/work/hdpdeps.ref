@@ -1,0 +1,8 @@
+V3 3
+FL C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/ch04/bitshift3/shifter.vhd 2014/02/17.12:31:08 P.49d
+EN work/shifter 1392661872 \
+      FL C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/ch04/bitshift3/shifter.vhd \
+      PB ieee/std_logic_1164 1354696159
+AR work/shifter/Behavioral 1392661873 \
+      FL C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/ch04/bitshift3/shifter.vhd \
+      EN work/shifter 1392661872

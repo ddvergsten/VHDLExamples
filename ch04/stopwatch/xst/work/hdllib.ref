@@ -1,0 +1,7 @@
+AR disp_hex_mux arch C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/ch04/list_ch04_15_disp_hex.vhd sub00/vhpl01 1392651272
+AR stop_watch cascade_arch C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/ch04/list_ch04_17_18_watch.vhd sub00/vhpl03 1392651274
+AR stop_watch_test arch C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/ch04/list_ch04_19_watch_test.vhd sub00/vhpl06 1392651277
+AR stop_watch if_arch C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/ch04/list_ch04_17_18_watch.vhd sub00/vhpl04 1392651275
+EN stop_watch_test NULL C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/ch04/list_ch04_19_watch_test.vhd sub00/vhpl05 1392651276
+EN disp_hex_mux NULL C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/ch04/list_ch04_15_disp_hex.vhd sub00/vhpl00 1392651271
+EN stop_watch NULL C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/ch04/list_ch04_17_18_watch.vhd sub00/vhpl02 1392651273
