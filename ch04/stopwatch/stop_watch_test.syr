@@ -3,14 +3,14 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.67 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.67 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: stop_watch_test.prj
 
@@ -107,8 +107,9 @@ Slice Utilization Ratio Delta      : 5
 Compiling vhdl file "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/ch04/list_ch04_15_disp_hex.vhd" in Library work.
 Architecture arch of Entity disp_hex_mux is up to date.
 Compiling vhdl file "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/ch04/list_ch04_17_18_watch.vhd" in Library work.
-Architecture cascade_arch of Entity stop_watch is up to date.
-Architecture if_arch of Entity stop_watch is up to date.
+Entity <stop_watch> compiled.
+Entity <stop_watch> (Architecture <cascade_arch>) compiled.
+Entity <stop_watch> (Architecture <if_arch>) compiled.
 Compiling vhdl file "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/ch04/list_ch04_19_watch_test.vhd" in Library work.
 Architecture arch of Entity stop_watch_test is up to date.
 
@@ -262,9 +263,9 @@ Design Statistics
 # IOs                              : 17
 
 Cell Usage :
-# BELS                             : 180
+# BELS                             : 181
 #      GND                         : 1
-#      INV                         : 5
+#      INV                         : 6
 #      LUT1                        : 39
 #      LUT2                        : 8
 #      LUT3                        : 9
@@ -291,7 +292,7 @@ Selected Device : 3s200ft256-4
 
  Number of Slices:                       45  out of   1920     2%  
  Number of Slice Flip Flops:             53  out of   3840     1%  
- Number of 4 input LUTs:                 88  out of   3840     2%  
+ Number of 4 input LUTs:                 89  out of   3840     2%  
  Number of IOs:                          17
  Number of bonded IOBs:                  15  out of    173     8%  
  Number of GCLKs:                         1  out of      8    12%  
@@ -329,7 +330,7 @@ Timing Summary:
 Speed Grade: -4
 
    Minimum period: 8.004ns (Maximum Frequency: 124.938MHz)
-   Minimum input arrival time before clock: 6.091ns
+   Minimum input arrival time before clock: 5.355ns
    Maximum output required time after clock: 11.541ns
    Maximum combinational path delay: No path found
 
@@ -370,21 +371,21 @@ Delay:               8.004ns (Levels of Logic = 8)
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
   Total number of paths / destination ports: 81 / 58
 -------------------------------------------------------------------------
-Offset:              6.091ns (Levels of Logic = 2)
-  Source:            btn<1> (PAD)
+Offset:              5.355ns (Levels of Logic = 2)
+  Source:            btn<0> (PAD)
   Destination:       watch_unit/ms_reg_22 (FF)
   Destination Clock: clk rising
 
-  Data Path: btn<1> to watch_unit/ms_reg_22
+  Data Path: btn<0> to watch_unit/ms_reg_22
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            24   0.821   1.992  btn_1_IBUF (btn_1_IBUF)
-     LUT3:I1->O           23   0.551   1.701  watch_unit/ms_reg_or00001 (watch_unit/ms_reg_or0000)
+     IBUF:I->O             4   0.821   1.256  btn_0_IBUF (btn_0_IBUF)
+     LUT3:I0->O           23   0.551   1.701  watch_unit/ms_reg_or00001 (watch_unit/ms_reg_or0000)
      FDRE:R                    1.026          watch_unit/ms_reg_0
     ----------------------------------------
-    Total                      6.091ns (2.398ns logic, 3.693ns route)
-                                       (39.4% logic, 60.6% route)
+    Total                      5.355ns (2.398ns logic, 2.957ns route)
+                                       (44.8% logic, 55.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
@@ -411,12 +412,12 @@ Offset:              11.541ns (Levels of Logic = 4)
 =========================================================================
 
 
-Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 7.52 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.57 secs
  
 --> 
 
-Total memory usage is 258916 kilobytes
+Total memory usage is 255304 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)

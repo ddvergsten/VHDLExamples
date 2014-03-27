@@ -35,8 +35,8 @@ begin
    -- 0.1 sec tick generator: mod-5000000
    ms_next <=
       (others=>'0') when clr='1' or
-                        (ms_reg=DVSR and go='1') else
-      ms_reg + 1 when go='1' else
+                        (ms_reg=DVSR and go='0') else
+      ms_reg + 1 when go='0' else
       ms_reg;
    ms_tick <= '1' when ms_reg=DVSR else '0';
    -- 0.1 sec counter

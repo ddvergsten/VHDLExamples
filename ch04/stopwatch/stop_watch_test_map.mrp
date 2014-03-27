@@ -9,7 +9,7 @@ Target Device  : xc3s200
 Target Package : ft256
 Target Speed   : -4
 Mapper Version : spartan3 -- $Revision: 1.55 $
-Mapped Date    : Mon Feb 17 09:34:51 2014
+Mapped Date    : Wed Mar 19 12:59:52 2014
 
 Design Summary
 --------------
@@ -30,14 +30,14 @@ Logic Distribution:
   The Slice Logic Distribution report is not meaningful if the design is
   over-mapped for a non-slice resource or if Placement fails.
 
-  Number of bonded IOBs:                 15 out of     173    8%
+  Number of bonded IOBs:                 17 out of     173    9%
   Number of BUFGMUXs:                     1 out of       8   12%
 
-Average Fanout of Non-Clock Nets:                2.96
+Average Fanout of Non-Clock Nets:                2.90
 
-Peak Memory Usage:  224 MB
-Total REAL time to MAP completion:  5 secs 
-Total CPU time to MAP completion:   1 secs 
+Peak Memory Usage:  221 MB
+Total REAL time to MAP completion:  0 secs 
+Total CPU time to MAP completion:   0 secs 
 
 NOTES:
 
@@ -81,10 +81,10 @@ Section 2 - Warnings
 
 Section 3 - Informational
 -------------------------
-INFO:LIT:243 - Logical network btn<3> has no load.
+INFO:LIT:243 - Logical network btn<3>_IBUF has no load.
 INFO:LIT:395 - The above info message is repeated 1 more times for the following
    (max. 5 shown):
-   btn<2>
+   btn<2>_IBUF
    To see the details of these info messages, please use the -detail switch.
 INFO:MapLib:562 - No environment variables are currently set.
 INFO:LIT:244 - All of the single ended outputs in this design are using slew
@@ -119,6 +119,8 @@ Section 6 - IOB Properties
 | an<3>                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | btn<0>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
 | btn<1>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| btn<2>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| btn<3>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
 | clk                                | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
 | sseg<0>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | sseg<1>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |

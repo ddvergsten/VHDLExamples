@@ -1,0 +1,3 @@
+vhdl isim_temp "../list_ch04_17_18_watch.vhd"
+vhdl isim_temp "../list_ch04_15_disp_hex.vhd"
+vhdl isim_temp "../list_ch04_19_watch_test.vhd"

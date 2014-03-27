@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2014-02-17T12:23:08</DateModified>
+  <DateModified>2014-03-10T08:56:03</DateModified>
   <ModuleName>shifter</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/ch04/bitshift3/iseconfig/shifter.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/ch04/bitshift3</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/ch04/bitshift3\</ImplementationReportsDirectory>
   <DateInitialized>2014-02-17T12:23:08</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

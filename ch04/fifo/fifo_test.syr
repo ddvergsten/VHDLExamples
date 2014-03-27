@@ -1,0 +1,500 @@
+Release 14.4 - xst P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: fifo_test.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "fifo_test.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "fifo_test"
+Output Format                      : NGC
+Target Device                      : xc3s200-4-ft256
+
+---- Source Options
+Top Module Name                    : fifo_test
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/ch06/list_ch06_01_02_debounce.vhd" in Library work.
+Architecture exp_fsmd_arch of Entity debounce is up to date.
+Architecture fsmd_arch of Entity debounce is up to date.
+Compiling vhdl file "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/ch04/list_ch04_20_fifo.vhd" in Library work.
+Architecture arch of Entity fifo is up to date.
+Compiling vhdl file "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/ch04/list_ch04_21_fifo_test.vhd" in Library work.
+Architecture arch of Entity fifo_test is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <fifo_test> in library <work> (architecture <arch>).
+
+Analyzing hierarchy for entity <debounce> in library <work> (architecture <fsmd_arch>).
+
+Analyzing hierarchy for entity <fifo> in library <work> (architecture <arch>) with generics.
+	B = 3
+	W = 2
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <fifo_test> in library <work> (Architecture <arch>).
+WARNING:Xst:753 - "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/ch04/list_ch04_21_fifo_test.vhd" line 17: Unconnected output port 'db_level' of component 'debounce'.
+WARNING:Xst:753 - "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/ch04/list_ch04_21_fifo_test.vhd" line 21: Unconnected output port 'db_level' of component 'debounce'.
+Entity <fifo_test> analyzed. Unit <fifo_test> generated.
+
+Analyzing Entity <debounce> in library <work> (Architecture <fsmd_arch>).
+Entity <debounce> analyzed. Unit <debounce> generated.
+
+Analyzing generic Entity <fifo> in library <work> (Architecture <arch>).
+	B = 3
+	W = 2
+Entity <fifo> analyzed. Unit <fifo> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <debounce>.
+    Related source file is "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/ch06/list_ch06_01_02_debounce.vhd".
+    Found finite state machine <FSM_0> for signal <state_reg>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 5                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | zero                                           |
+    | Power Up State     | zero                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 21-bit subtractor for signal <q_next$share0000> created at line 109.
+    Found 21-bit register for signal <q_reg>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  21 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <debounce> synthesized.
+
+
+Synthesizing Unit <fifo>.
+    Related source file is "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/ch04/list_ch04_20_fifo.vhd".
+    Found 3-bit 4-to-1 multiplexer for signal <r_data>.
+    Found 12-bit register for signal <array_reg>.
+    Found 1-bit register for signal <empty_reg>.
+    Found 2-bit comparator equal for signal <empty_reg$cmp_eq0000> created at line 89.
+    Found 1-bit 4-to-1 multiplexer for signal <empty_reg$mux0000> created at line 83.
+    Found 1-bit register for signal <full_reg>.
+    Found 2-bit comparator equal for signal <full_reg$cmp_eq0000> created at line 97.
+    Found 1-bit 4-to-1 multiplexer for signal <full_reg$mux0000> created at line 83.
+    Found 2-bit register for signal <r_ptr_reg>.
+    Found 2-bit 4-to-1 multiplexer for signal <r_ptr_reg$mux0000> created at line 83.
+    Found 2-bit adder for signal <r_ptr_succ$add0000> created at line 72.
+    Found 2-bit register for signal <w_ptr_reg>.
+    Found 2-bit 4-to-1 multiplexer for signal <w_ptr_reg$mux0000> created at line 83.
+    Found 2-bit adder for signal <w_ptr_succ$add0000> created at line 71.
+    Summary:
+	inferred  18 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+	inferred   9 Multiplexer(s).
+Unit <fifo> synthesized.
+
+
+Synthesizing Unit <fifo_test>.
+    Related source file is "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/ch04/list_ch04_21_fifo_test.vhd".
+Unit <fifo_test> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 4
+ 2-bit adder                                           : 2
+ 21-bit subtractor                                     : 2
+# Registers                                            : 10
+ 1-bit register                                        : 2
+ 2-bit register                                        : 2
+ 21-bit register                                       : 2
+ 3-bit register                                        : 4
+# Comparators                                          : 2
+ 2-bit comparator equal                                : 2
+# Multiplexers                                         : 5
+ 1-bit 4-to-1 multiplexer                              : 2
+ 2-bit 4-to-1 multiplexer                              : 2
+ 3-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <btn_db_unit0/state_reg/FSM> on signal <state_reg[1:2]> with gray encoding.
+Optimizing FSM <btn_db_unit1/state_reg/FSM> on signal <state_reg[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ zero  | 00
+ wait0 | 10
+ one   | 11
+ wait1 | 01
+-------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Adders/Subtractors                                   : 4
+ 2-bit adder                                           : 2
+ 21-bit subtractor                                     : 2
+# Registers                                            : 60
+ Flip-Flops                                            : 60
+# Comparators                                          : 2
+ 2-bit comparator equal                                : 2
+# Multiplexers                                         : 5
+ 1-bit 4-to-1 multiplexer                              : 2
+ 2-bit 4-to-1 multiplexer                              : 2
+ 3-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <fifo_test> ...
+
+Optimizing unit <debounce> ...
+
+Optimizing unit <fifo> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block fifo_test, actual ratio is 4.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 64
+ Flip-Flops                                            : 64
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : fifo_test.ngr
+Top Level Output File Name         : fifo_test
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 15
+
+Cell Usage :
+# BELS                             : 244
+#      GND                         : 1
+#      INV                         : 40
+#      LUT1                        : 2
+#      LUT2                        : 6
+#      LUT2_D                      : 1
+#      LUT3                        : 7
+#      LUT3_D                      : 3
+#      LUT4                        : 79
+#      LUT4_D                      : 2
+#      LUT4_L                      : 3
+#      MUXCY                       : 52
+#      MUXF5                       : 5
+#      VCC                         : 1
+#      XORCY                       : 42
+# FlipFlops/Latches                : 64
+#      FDC                         : 51
+#      FDCE                        : 12
+#      FDP                         : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 14
+#      IBUF                        : 6
+#      OBUF                        : 8
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200ft256-4 
+
+ Number of Slices:                       84  out of   1920     4%  
+ Number of Slice Flip Flops:             64  out of   3840     1%  
+ Number of 4 input LUTs:                143  out of   3840     3%  
+ Number of IOs:                          15
+ Number of bonded IOBs:                  15  out of    173     8%  
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 64    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset                              | IBUF                   | 64    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 13.503ns (Maximum Frequency: 74.058MHz)
+   Minimum input arrival time before clock: 12.731ns
+   Maximum output required time after clock: 9.533ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 13.503ns (frequency: 74.058MHz)
+  Total number of paths / destination ports: 9840 / 62
+-------------------------------------------------------------------------
+Delay:               13.503ns (Levels of Logic = 24)
+  Source:            btn_db_unit0/q_reg_0 (FF)
+  Destination:       fifo_unit/full_reg (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: btn_db_unit0/q_reg_0 to fifo_unit/full_reg
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.720   1.246  btn_db_unit0/q_reg_0 (btn_db_unit0/q_reg_0)
+     LUT1:I0->O            1   0.551   0.000  btn_db_unit0/Msub_q_next_share0000_cy<0>_rt (btn_db_unit0/Msub_q_next_share0000_cy<0>_rt)
+     MUXCY:S->O            1   0.500   0.000  btn_db_unit0/Msub_q_next_share0000_cy<0> (btn_db_unit0/Msub_q_next_share0000_cy<0>)
+     MUXCY:CI->O           1   0.064   0.000  btn_db_unit0/Msub_q_next_share0000_cy<1> (btn_db_unit0/Msub_q_next_share0000_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  btn_db_unit0/Msub_q_next_share0000_cy<2> (btn_db_unit0/Msub_q_next_share0000_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  btn_db_unit0/Msub_q_next_share0000_cy<3> (btn_db_unit0/Msub_q_next_share0000_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  btn_db_unit0/Msub_q_next_share0000_cy<4> (btn_db_unit0/Msub_q_next_share0000_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  btn_db_unit0/Msub_q_next_share0000_cy<5> (btn_db_unit0/Msub_q_next_share0000_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  btn_db_unit0/Msub_q_next_share0000_cy<6> (btn_db_unit0/Msub_q_next_share0000_cy<6>)
+     MUXCY:CI->O           1   0.064   0.000  btn_db_unit0/Msub_q_next_share0000_cy<7> (btn_db_unit0/Msub_q_next_share0000_cy<7>)
+     MUXCY:CI->O           1   0.064   0.000  btn_db_unit0/Msub_q_next_share0000_cy<8> (btn_db_unit0/Msub_q_next_share0000_cy<8>)
+     MUXCY:CI->O           1   0.064   0.000  btn_db_unit0/Msub_q_next_share0000_cy<9> (btn_db_unit0/Msub_q_next_share0000_cy<9>)
+     MUXCY:CI->O           1   0.064   0.000  btn_db_unit0/Msub_q_next_share0000_cy<10> (btn_db_unit0/Msub_q_next_share0000_cy<10>)
+     MUXCY:CI->O           1   0.064   0.000  btn_db_unit0/Msub_q_next_share0000_cy<11> (btn_db_unit0/Msub_q_next_share0000_cy<11>)
+     XORCY:CI->O           1   0.904   0.827  btn_db_unit0/Msub_q_next_share0000_xor<12> (btn_db_unit0/q_next_share0000<12>)
+     LUT4:I3->O            2   0.551   1.216  btn_db_unit0/q_next<12>1 (btn_db_unit0/q_next<12>)
+     LUT4:I0->O            1   0.551   0.000  btn_db_unit0/state_reg_cmp_eq0000_wg_lut<1> (btn_db_unit0/state_reg_cmp_eq0000_wg_lut<1>)
+     MUXCY:S->O            1   0.500   0.000  btn_db_unit0/state_reg_cmp_eq0000_wg_cy<1> (btn_db_unit0/state_reg_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  btn_db_unit0/state_reg_cmp_eq0000_wg_cy<2> (btn_db_unit0/state_reg_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  btn_db_unit0/state_reg_cmp_eq0000_wg_cy<3> (btn_db_unit0/state_reg_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  btn_db_unit0/state_reg_cmp_eq0000_wg_cy<4> (btn_db_unit0/state_reg_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O           4   0.303   0.943  btn_db_unit0/state_reg_cmp_eq0000_wg_cy<5> (btn_db_unit0/state_reg_cmp_eq0000)
+     LUT4_D:I3->O          4   0.551   1.112  btn_db_unit0/db_tick1 (db_btn<0>)
+     LUT3:I1->O            1   0.551   0.827  fifo_unit/Mmux_full_reg_mux0000344 (fifo_unit/Mmux_full_reg_mux0000344)
+     LUT4:I3->O            1   0.551   0.000  fifo_unit/Mmux_full_reg_mux0000355 (fifo_unit/full_reg_mux0000)
+     FDC:D                     0.203          fifo_unit/full_reg
+    ----------------------------------------
+    Total                     13.503ns (7.332ns logic, 6.171ns route)
+                                       (54.3% logic, 45.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 1314 / 76
+-------------------------------------------------------------------------
+Offset:              12.731ns (Levels of Logic = 9)
+  Source:            btn<1> (PAD)
+  Destination:       fifo_unit/full_reg (FF)
+  Destination Clock: clk rising
+
+  Data Path: btn<1> to fifo_unit/full_reg
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            14   0.821   1.526  btn_1_IBUF (btn_1_IBUF)
+     LUT2_D:I0->O         22   0.551   1.668  btn_db_unit1/q_next<0>11 (btn_db_unit1/N01)
+     LUT4:I2->O            2   0.551   0.945  btn_db_unit1/q_next<1>1 (btn_db_unit1/q_next<1>)
+     LUT4:I2->O            1   0.551   0.827  btn_db_unit1/q_next<20>1_SW0 (N25)
+     LUT4:I3->O            1   0.551   0.000  btn_db_unit1/state_reg_cmp_eq0000_wg_lut<5> (btn_db_unit1/state_reg_cmp_eq0000_wg_lut<5>)
+     MUXCY:S->O            9   0.739   1.150  btn_db_unit1/state_reg_cmp_eq0000_wg_cy<5> (btn_db_unit1/state_reg_cmp_eq0000)
+     LUT4_D:I3->LO         1   0.551   0.168  btn_db_unit1/db_tick1 (N36)
+     LUT3:I2->O            1   0.551   0.827  fifo_unit/Mmux_full_reg_mux0000344 (fifo_unit/Mmux_full_reg_mux0000344)
+     LUT4:I3->O            1   0.551   0.000  fifo_unit/Mmux_full_reg_mux0000355 (fifo_unit/full_reg_mux0000)
+     FDC:D                     0.203          fifo_unit/full_reg
+    ----------------------------------------
+    Total                     12.731ns (5.620ns logic, 7.111ns route)
+                                       (44.1% logic, 55.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 23 / 5
+-------------------------------------------------------------------------
+Offset:              9.533ns (Levels of Logic = 3)
+  Source:            fifo_unit/r_ptr_reg_0 (FF)
+  Destination:       led<2> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: fifo_unit/r_ptr_reg_0 to led<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             12   0.720   1.457  fifo_unit/r_ptr_reg_0 (fifo_unit/r_ptr_reg_0)
+     LUT3:I0->O            1   0.551   0.000  fifo_unit/Mmux_r_data_3 (fifo_unit/Mmux_r_data_3)
+     MUXF5:I1->O           1   0.360   0.801  fifo_unit/Mmux_r_data_2_f5 (led_0_OBUF)
+     OBUF:I->O                 5.644          led_0_OBUF (led<0>)
+    ----------------------------------------
+    Total                      9.533ns (7.275ns logic, 2.258ns route)
+                                       (76.3% logic, 23.7% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.69 secs
+ 
+--> 
+
+Total memory usage is 257224 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

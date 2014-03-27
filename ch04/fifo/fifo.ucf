@@ -1,0 +1,21 @@
+ #clk, reset: in std_logic;
+ #     btn: std_logic_vector(1 downto 0);
+ #     sw: std_logic_vector(2 downto 0);
+ #     led: out std_logic_vector(7 downto 0)
+
+
+NET "btn<1>"  LOC = "M14";
+NET "btn<0>" LOC = "M13";
+
+NET "sw<2>" LOC = "H14";
+NET "sw<1>" LOC = "G12";
+NET "sw<0>" LOC = "F12";
+
+NET "led<7>" LOC = "P11";
+NET "led<6>" LOC = "P12";
+NET "led<5>" LOC = "N12";
+NET "led<4>" LOC = "P13";
+NET "led<3>" LOC = "N14";
+NET "led<2>" LOC = "L12";
+NET "led<1>" LOC = "P14";
+NET "led<0>" LOC = "K12";

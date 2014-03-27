@@ -4,7 +4,7 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 C:\Xilinx\14.4\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
 -n 3 -fastpaths -xml stop_watch_test.twx stop_watch_test.ncd -o
-stop_watch_test.twr stop_watch_test.pcf
+stop_watch_test.twr stop_watch_test.pcf -ucf stop_watch.ucf
 
 Design file:              stop_watch_test.ncd
 Physical constraint file: stop_watch_test.pcf
@@ -45,8 +45,8 @@ Setup/Hold to clock clk
             |Max Setup to|Max Hold to |                  | Clock  |
 Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------------+--------+
-btn<0>      |    3.748(R)|    0.294(R)|clk_BUFGP         |   0.000|
-btn<1>      |    3.906(R)|    0.388(R)|clk_BUFGP         |   0.000|
+btn<0>      |    3.979(R)|   -0.156(R)|clk_BUFGP         |   0.000|
+btn<1>      |    3.568(R)|    0.875(R)|clk_BUFGP         |   0.000|
 ------------+------------+------------+------------------+--------+
 
 Clock clk to Pad
@@ -54,18 +54,18 @@ Clock clk to Pad
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-an<0>       |   11.593(R)|clk_BUFGP         |   0.000|
-an<1>       |   10.741(R)|clk_BUFGP         |   0.000|
-an<2>       |   11.102(R)|clk_BUFGP         |   0.000|
-an<3>       |   10.820(R)|clk_BUFGP         |   0.000|
-sseg<0>     |   12.124(R)|clk_BUFGP         |   0.000|
-sseg<1>     |   12.255(R)|clk_BUFGP         |   0.000|
-sseg<2>     |   12.282(R)|clk_BUFGP         |   0.000|
-sseg<3>     |   12.577(R)|clk_BUFGP         |   0.000|
-sseg<4>     |   12.638(R)|clk_BUFGP         |   0.000|
-sseg<5>     |   12.881(R)|clk_BUFGP         |   0.000|
-sseg<6>     |   12.371(R)|clk_BUFGP         |   0.000|
-sseg<7>     |   11.078(R)|clk_BUFGP         |   0.000|
+an<0>       |   11.634(R)|clk_BUFGP         |   0.000|
+an<1>       |   10.630(R)|clk_BUFGP         |   0.000|
+an<2>       |   10.562(R)|clk_BUFGP         |   0.000|
+an<3>       |   11.707(R)|clk_BUFGP         |   0.000|
+sseg<0>     |   13.283(R)|clk_BUFGP         |   0.000|
+sseg<1>     |   13.985(R)|clk_BUFGP         |   0.000|
+sseg<2>     |   14.237(R)|clk_BUFGP         |   0.000|
+sseg<3>     |   13.394(R)|clk_BUFGP         |   0.000|
+sseg<4>     |   13.167(R)|clk_BUFGP         |   0.000|
+sseg<5>     |   14.331(R)|clk_BUFGP         |   0.000|
+sseg<6>     |   14.346(R)|clk_BUFGP         |   0.000|
+sseg<7>     |   12.382(R)|clk_BUFGP         |   0.000|
 ------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk
@@ -73,18 +73,18 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    7.666|         |         |         |
+clk            |    6.916|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Mon Feb 17 09:35:09 2014 
+Analysis completed Wed Mar 19 13:00:02 2014 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 143 MB
+Peak Memory Usage: 140 MB
 
 
 
