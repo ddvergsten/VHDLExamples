@@ -9,3 +9,8 @@ ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-ft256-5 greaterThan.
 map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o greaterThan_map.ncd greaterThan.ngd greaterThan.pcf 
 par -w -intstyle ise -ol high -t 1 greaterThan_map.ncd greaterThan.ncd greaterThan.pcf 
 trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml greaterThan.twx greaterThan.ncd -o greaterThan.twr greaterThan.pcf 
+xst -intstyle ise -ifn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/experiment2-9/experiment2-9/greaterThan.xst" -ofn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/experiment2-9/experiment2-9/greaterThan.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-ft256-5 greaterThan.ngc greaterThan.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o greaterThan_map.ncd greaterThan.ngd greaterThan.pcf 
+par -w -intstyle ise -ol high -t 1 greaterThan_map.ncd greaterThan.ncd greaterThan.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml greaterThan.twx greaterThan.ncd -o greaterThan.twr greaterThan.pcf 

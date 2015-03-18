@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/experiment2-9/experiment2-9/greaterThan_tb_isim_beh.exe" -prj "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/experiment2-9/experiment2-9/greaterThan_tb_beh.prj" "work.greaterThan_tb" 

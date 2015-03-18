@@ -1,0 +1,2 @@
+vhdl work "greaterThan.vhd"
+vhdl work "greaterThan_tb.vhd"

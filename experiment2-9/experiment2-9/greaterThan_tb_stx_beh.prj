@@ -1,0 +1,2 @@
+vhdl isim_temp "greaterThan.vhd"
+vhdl isim_temp "greaterThan_tb.vhd"
