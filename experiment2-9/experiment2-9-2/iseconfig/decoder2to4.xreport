@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-04-01T11:13:53</DateModified>
+  <DateModified>2015-04-01T18:03:59</DateModified>
   <ModuleName>decoder2to4</ModuleName>
   <SummaryTimeStamp>2015-04-01T11:13:47</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/experiment2-9/experiment2-9-2/iseconfig/decoder2to4.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/experiment2-9/experiment2-9-2</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/ddvergsten/Documents/VHDL3/VHDLExamples/experiment2-9/experiment2-9-2/iseconfig/decoder2to4.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/ddvergsten/Documents/VHDL3/VHDLExamples/experiment2-9/experiment2-9-2\</ImplementationReportsDirectory>
   <DateInitialized>2015-04-01T11:07:14</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
