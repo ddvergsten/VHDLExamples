@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/experiment2-9/experiment2-9-2/decoder2to4.xst" -ofn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/experiment2-9/experiment2-9-2/decoder2to4.syr" 
+xst -intstyle ise -ifn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/experiment2-9/experiment2-9-2/decoder2to4.xst" -ofn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/experiment2-9/experiment2-9-2/decoder2to4.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-ft256-5 decoder2to4.ngc decoder2to4.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o decoder2to4_map.ncd decoder2to4.ngd decoder2to4.pcf 
+par -w -intstyle ise -ol high -t 1 decoder2to4_map.ncd decoder2to4.ncd decoder2to4.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml decoder2to4.twx decoder2to4.ncd -o decoder2to4.twr decoder2to4.pcf 

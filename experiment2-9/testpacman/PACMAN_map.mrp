@@ -1,0 +1,326 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Mapping Report File for Design 'PACMAN'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off
+-c 100 -o PACMAN_map.ncd PACMAN.ngd PACMAN.pcf 
+Target Device  : xc3s200
+Target Package : ft256
+Target Speed   : -5
+Mapper Version : spartan3 -- $Revision: 1.55 $
+Mapped Date    : Thu Mar 26 10:57:21 2015
+ERROR:Pack:18 - The design is too large for the given device and package. 
+   Please check the Design Summary section to see which resource requirement for
+   your design exceeds the resources available in the device.
+
+   NOTE: An NCD file will still be generated to allow you to examine the mapped
+   design.  This file is intended for evaluation use only, and will not process
+   successfully through PAR.
+
+   This mapped NCD file can be used to evaluate how the design's logic has been
+   mapped into FPGA logic resources.  It can also be used to analyze
+   preliminary, logic-level (pre-route) timing with one of the Xilinx static
+   timing analysis tools (TRCE or Timing Analyzer).
+
+Design Summary
+--------------
+Number of errors:      2
+Number of warnings:    3
+Logic Utilization:
+  Number of Slice Flip Flops:           504 out of   3,840   13%
+  Number of 4 input LUTs:             2,838 out of   3,840   73%
+Logic Distribution:
+  Number of occupied Slices:          1,612 out of   1,920   83%
+    Number of Slices containing only related logic:   1,612 out of   1,612 100%
+    Number of Slices containing unrelated logic:          0 out of   1,612   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:       2,998 out of   3,840   78%
+    Number used as logic:             2,806
+    Number used as a route-thru:        160
+    Number used for Dual Port RAMs:      32
+      (Two LUTs used per Dual Port RAM)
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 61 out of     173   35%
+  Number of RAMB16s:                     24 out of      12  200% (OVERMAPPED)
+  Number of BUFGMUXs:                     1 out of       8   12%
+  Number of DCMs:                         1 out of       4   25%
+
+Average Fanout of Non-Clock Nets:                3.59
+
+Peak Memory Usage:  318 MB
+Total REAL time to MAP completion:  19 secs 
+Total CPU time to MAP completion:   3 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+ERROR:Pack:2310 - Too many comps of type "RAMB16" found to fit this device.
+ERROR:Pack:18 - The design is too large for the given device and package. 
+   Please check the Design Summary section to see which resource requirement for
+   your design exceeds the resources available in the device.
+
+   NOTE: An NCD file will still be generated to allow you to examine the mapped
+   design.  This file is intended for evaluation use only, and will not process
+   successfully through PAR.
+
+   This mapped NCD file can be used to evaluate how the design's logic has been
+   mapped into FPGA logic resources.  It can also be used to analyze
+   preliminary, logic-level (pre-route) timing with one of the Xilinx static
+   timing analysis tools (TRCE or Timing Analyzer).
+
+Section 2 - Warnings
+--------------------
+WARNING:MapLib:864 - The following Virtex Blockram(s) is/are being retargeted to
+   Virtex2 Blockram(s). This will waste 75% of Virtex2 Blockram capacity. To
+   obtain better utilization, Please re-run memory generator to retarget to
+   Virtex2 Blockram modules:
+   RAMB4_S8 symbol "u_audio/audio_rom_1m/rom0.inst" (output
+   signal=u_audio/rom1m_data<3>),
+   RAMB4_S4 symbol "u_rams/c0" (output signal=u_rams/dout_c_l<3>),
+   RAMB4_S4 symbol "u_rams/c1" (output signal=u_rams/dout_c_u<3>),
+   RAMB4_S4 symbol "u_rams/v0" (output signal=u_rams/dout_v_l<3>),
+   RAMB4_S4 symbol "u_rams/v1" (output signal=u_rams/dout_v_u<3>),
+   RAMB4_S4 symbol "u_rams/w0" (output signal=u_rams/dout_w_l<3>),
+   RAMB4_S4 symbol "u_rams/w1" (output signal=u_rams/dout_w_u<3>),
+   RAMB4_S1 symbol "u_video/char_rom_5e/rom0.inst" (output
+   signal=u_video/char_rom_5e_dout<0>),
+   RAMB4_S1 symbol "u_video/char_rom_5e/rom1.inst" (output
+   signal=u_video/char_rom_5e_dout<1>),
+   RAMB4_S1 symbol "u_video/char_rom_5e/rom2.inst" (output
+   signal=u_video/char_rom_5e_dout<2>),
+   RAMB4_S1 symbol "u_video/char_rom_5e/rom3.inst" (output
+   signal=u_video/char_rom_5e_dout<3>),
+   RAMB4_S1 symbol "u_video/char_rom_5e/rom4.inst" (output
+   signal=u_video/char_rom_5e_dout<4>),
+   RAMB4_S1 symbol "u_video/char_rom_5e/rom5.inst" (output
+   signal=u_video/char_rom_5e_dout<5>),
+   RAMB4_S1 symbol "u_video/char_rom_5e/rom6.inst" (output
+   signal=u_video/char_rom_5e_dout<6>),
+   RAMB4_S1 symbol "u_video/char_rom_5e/rom7.inst" (output
+   signal=u_video/char_rom_5e_dout<7>),
+   RAMB4_S1 symbol "u_video/char_rom_5f/rom0.inst" (output
+   signal=u_video/char_rom_5f_dout<0>),
+   RAMB4_S1 symbol "u_video/char_rom_5f/rom1.inst" (output
+   signal=u_video/char_rom_5f_dout<1>),
+   RAMB4_S1 symbol "u_video/char_rom_5f/rom2.inst" (output
+   signal=u_video/char_rom_5f_dout<2>),
+   RAMB4_S1 symbol "u_video/char_rom_5f/rom3.inst" (output
+   signal=u_video/char_rom_5f_dout<3>),
+   RAMB4_S1 symbol "u_video/char_rom_5f/rom4.inst" (output
+   signal=u_video/char_rom_5f_dout<4>),
+   RAMB4_S1 symbol "u_video/char_rom_5f/rom5.inst" (output
+   signal=u_video/char_rom_5f_dout<5>),
+   RAMB4_S1 symbol "u_video/char_rom_5f/rom6.inst" (output
+   signal=u_video/char_rom_5f_dout<6>),
+   RAMB4_S1 symbol "u_video/char_rom_5f/rom7.inst" (output
+   signal=u_video/char_rom_5f_dout<7>),
+   RAMB4_S4_S4 symbol "u_video/u_sprite_ram" (output
+   signal=u_video/sprite_ram_op<3>)
+WARNING:LIT:160 - CLKFB pin of DCM symbol "CLKDLLA" (output signal=clk_dlla_op0)
+   is driven by pin CLK0 of DCM symbol "CLKDLLA" (output signal=clk_dlla_op0).
+   Proper phase relationship to the original clock cannot be guaranteed if the
+   driver is not an IBUF or BUFGMUX. Timing analysis results may not be valid.
+WARNING:Pack:266 - The function generator u0/u0/mcode/JumpXY failed to merge
+   with F5 multiplexer u0/u0/A_10_mux0008712_SW1.  There is a conflict for the
+   FXMUX.  The design will exhibit suboptimal timing.
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network u_video/sprite_xy_ram[7].inst/SPO has no load.
+INFO:LIT:395 - The above info message is repeated 15 more times for the
+   following (max. 5 shown):
+   u_video/sprite_xy_ram[6].inst/SPO,
+   u_video/sprite_xy_ram[5].inst/SPO,
+   u_video/sprite_xy_ram[4].inst/SPO,
+   u_video/sprite_xy_ram[3].inst/SPO,
+   u_video/sprite_xy_ram[2].inst/SPO
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+   2 block(s) removed
+   2 block(s) optimized away
+   2 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+Loadless block "BUFG3" (CKBUF) removed.
+ The signal "clk_dllb_div" is loadless and has been removed.
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "clk_dllb_op0" is unused and has been removed.
+Unused block "CLKDLLB" (DCM) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| AUDIO_OUT<0>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| AUDIO_OUT<1>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| AUDIO_OUT<2>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| AUDIO_OUT<3>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| AUDIO_OUT<4>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| AUDIO_OUT<5>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| AUDIO_OUT<6>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| AUDIO_OUT<7>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| BUTTON<0>                          | IOB              | INPUT     | LVCMOS25             |       |          |      |              | PULLUP   |          |
+| BUTTON<1>                          | IOB              | INPUT     | LVCMOS25             |       |          |      |              | PULLUP   |          |
+| BUTTON<2>                          | IOB              | INPUT     | LVCMOS25             |       |          |      |              | PULLUP   |          |
+| BUTTON<3>                          | IOB              | INPUT     | LVCMOS25             |       |          |      |              | PULLUP   |          |
+| BUTTON<4>                          | IOB              | INPUT     | LVCMOS25             |       |          |      |              | PULLUP   |          |
+| BUTTON<5>                          | IOB              | INPUT     | LVCMOS25             |       |          |      |              | PULLUP   |          |
+| BUTTON<6>                          | IOB              | INPUT     | LVCMOS25             |       |          |      |              | PULLUP   |          |
+| BUTTON<7>                          | IOB              | INPUT     | LVCMOS25             |       |          |      |              | PULLUP   |          |
+| BUTTON<8>                          | IOB              | INPUT     | LVCMOS25             |       |          |      |              | PULLUP   |          |
+| BUTTON<9>                          | IOB              | INPUT     | LVCMOS25             |       |          |      |              | PULLUP   |          |
+| CLK_40                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| COMP_SYNC_L_OUT                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| HSYNC_OUT                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| RESET_L                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| ROM_ADDR<0>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| ROM_ADDR<1>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| ROM_ADDR<2>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| ROM_ADDR<3>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| ROM_ADDR<4>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| ROM_ADDR<5>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| ROM_ADDR<6>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| ROM_ADDR<7>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| ROM_ADDR<8>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| ROM_ADDR<9>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| ROM_ADDR<10>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| ROM_ADDR<11>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| ROM_ADDR<12>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| ROM_ADDR<13>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| ROM_ADDR<14>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| ROM_ADDR<15>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| ROM_ADDR<16>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| ROM_ADDR<17>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| ROM_ADDR<18>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| ROM_CE_L                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| ROM_DATA<0>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| ROM_DATA<1>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| ROM_DATA<2>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| ROM_DATA<3>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| ROM_DATA<4>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| ROM_DATA<5>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| ROM_DATA<6>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| ROM_DATA<7>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| ROM_OE_L                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| ROM_WE_L                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| VIDEO_B_OUT<0>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| VIDEO_B_OUT<1>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| VIDEO_G_OUT<0>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| VIDEO_G_OUT<1>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| VIDEO_G_OUT<2>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| VIDEO_R_OUT<0>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| VIDEO_R_OUT<1>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| VIDEO_R_OUT<2>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| VSYNC_OUT                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/experiment2-9/testpacman/PACMAN.xst" -ofn "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/experiment2-9/testpacman/PACMAN.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-ft256-5 PACMAN.ngc PACMAN.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o PACMAN_map.ncd PACMAN.ngd PACMAN.pcf 

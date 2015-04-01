@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="LIT" num="243" delta="new" >Logical network <arg fmt="%s" index="1">u_video/sprite_xy_ram[7].inst/SPO</arg> has no load.
+</msg>
+
+<msg type="info" file="LIT" num="395" delta="new" >The above <arg fmt="%s" index="1">info</arg> message is repeated <arg fmt="%d" index="2">15</arg> more times for the following (max. 5 shown):
+<arg fmt="%s" index="3">u_video/sprite_xy_ram[6].inst/SPO,
+u_video/sprite_xy_ram[5].inst/SPO,
+u_video/sprite_xy_ram[4].inst/SPO,
+u_video/sprite_xy_ram[3].inst/SPO,
+u_video/sprite_xy_ram[2].inst/SPO</arg>
+To see the details of these <arg fmt="%s" index="4">info</arg> messages, please use the -detail switch.
+</msg>
+
+<msg type="info" file="MapLib" num="562" delta="new" >No environment variables are currently set.
+</msg>
+
+<msg type="warning" file="MapLib" num="864" delta="new" >The following Virtex Blockram(s) is/are being retargeted to Virtex2 Blockram(s). This will waste 75% of Virtex2 Blockram capacity. To obtain better utilization, Please re-run memory generator to retarget to Virtex2 Blockram modules:
+<arg fmt="%s" index="1">RAMB4_S8 symbol &quot;u_audio/audio_rom_1m/rom0.inst&quot; (output signal=u_audio/rom1m_data&lt;3&gt;),
+RAMB4_S4 symbol &quot;u_rams/c0&quot; (output signal=u_rams/dout_c_l&lt;3&gt;),
+RAMB4_S4 symbol &quot;u_rams/c1&quot; (output signal=u_rams/dout_c_u&lt;3&gt;),
+RAMB4_S4 symbol &quot;u_rams/v0&quot; (output signal=u_rams/dout_v_l&lt;3&gt;),
+RAMB4_S4 symbol &quot;u_rams/v1&quot; (output signal=u_rams/dout_v_u&lt;3&gt;),
+RAMB4_S4 symbol &quot;u_rams/w0&quot; (output signal=u_rams/dout_w_l&lt;3&gt;),
+RAMB4_S4 symbol &quot;u_rams/w1&quot; (output signal=u_rams/dout_w_u&lt;3&gt;),
+RAMB4_S1 symbol &quot;u_video/char_rom_5e/rom0.inst&quot; (output signal=u_video/char_rom_5e_dout&lt;0&gt;),
+RAMB4_S1 symbol &quot;u_video/char_rom_5e/rom1.inst&quot; (output signal=u_video/char_rom_5e_dout&lt;1&gt;),
+RAMB4_S1 symbol &quot;u_video/char_rom_5e/rom2.inst&quot; (output signal=u_video/char_rom_5e_dout&lt;2&gt;),
+RAMB4_S1 symbol &quot;u_video/char_rom_5e/rom3.inst&quot; (output signal=u_video/char_rom_5e_dout&lt;3&gt;),
+RAMB4_S1 symbol &quot;u_video/char_rom_5e/rom4.inst&quot; (output signal=u_video/char_rom_5e_dout&lt;4&gt;),
+RAMB4_S1 symbol &quot;u_video/char_rom_5e/rom5.inst&quot; (output signal=u_video/char_rom_5e_dout&lt;5&gt;),
+RAMB4_S1 symbol &quot;u_video/char_rom_5e/rom6.inst&quot; (output signal=u_video/char_rom_5e_dout&lt;6&gt;),
+RAMB4_S1 symbol &quot;u_video/char_rom_5e/rom7.inst&quot; (output signal=u_video/char_rom_5e_dout&lt;7&gt;),
+RAMB4_S1 symbol &quot;u_video/char_rom_5f/rom0.inst&quot; (output signal=u_video/char_rom_5f_dout&lt;0&gt;),
+RAMB4_S1 symbol &quot;u_video/char_rom_5f/rom1.inst&quot; (output signal=u_video/char_rom_5f_dout&lt;1&gt;),
+RAMB4_S1 symbol &quot;u_video/char_rom_5f/rom2.inst&quot; (output signal=u_video/char_rom_5f_dout&lt;2&gt;),
+RAMB4_S1 symbol &quot;u_video/char_rom_5f/rom3.inst&quot; (output signal=u_video/char_rom_5f_dout&lt;3&gt;),
+RAMB4_S1 symbol &quot;u_video/char_rom_5f/rom4.inst&quot; (output signal=u_video/char_rom_5f_dout&lt;4&gt;),
+RAMB4_S1 symbol &quot;u_video/char_rom_5f/rom5.inst&quot; (output signal=u_video/char_rom_5f_dout&lt;5&gt;),
+RAMB4_S1 symbol &quot;u_video/char_rom_5f/rom6.inst&quot; (output signal=u_video/char_rom_5f_dout&lt;6&gt;),
+RAMB4_S1 symbol &quot;u_video/char_rom_5f/rom7.inst&quot; (output signal=u_video/char_rom_5f_dout&lt;7&gt;),
+RAMB4_S4_S4 symbol &quot;u_video/u_sprite_ram&quot; (output signal=u_video/sprite_ram_op&lt;3&gt;)</arg>
+</msg>
+
+<msg type="warning" file="LIT" num="160" delta="new" >CLKFB pin of <arg fmt="%s" index="1">DCM symbol &quot;CLKDLLA&quot; (output signal=clk_dlla_op0)</arg> is driven by <arg fmt="%s" index="2">pin CLK0 of DCM symbol &quot;CLKDLLA&quot; (output signal=clk_dlla_op0)</arg>. Proper phase relationship to the original clock cannot be guaranteed if the driver is not an IBUF or BUFGMUX. Timing analysis results may not be valid.
+</msg>
+
+<msg type="info" file="LIT" num="244" delta="new" >All of the single ended outputs in this design are using slew rate limited output drivers. The delay on speed critical single ended outputs can be dramatically reduced by designating them as fast outputs.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="new" >The function generator <arg fmt="%s" index="1">u0/u0/mcode/JumpXY</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">u0/u0/A_10_mux0008712_SW1</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="error" file="Pack" num="2310" delta="new" >Too many comps of type &quot;<arg fmt="%s" index="1">RAMB16</arg>&quot; found to fit this device.
+</msg>
+
+<msg type="error" file="Pack" num="18" delta="new" >The design is too large for the given device and package.  Please check the Design Summary section to see which resource requirement for your design exceeds the resources available in the device.
+
+NOTE: An NCD file will still be generated to allow you to examine the mapped design.  This file is intended for evaluation use only, and will not process successfully through PAR.
+
+This mapped NCD file can be used to evaluate how the design&apos;s logic has been mapped into FPGA logic resources.  It can also be used to analyze preliminary, logic-level (pre-route) timing with one of the Xilinx static timing analysis tools (TRCE or Timing Analyzer).
+</msg>
+
+</messages>
+

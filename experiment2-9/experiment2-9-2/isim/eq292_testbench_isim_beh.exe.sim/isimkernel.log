@@ -1,0 +1,35 @@
+Command line:
+   eq292_testbench_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  53146
+
+Wed Apr 01 11:37:48 2015
+
+
+ Elaboration Time: 0.109201 sec
+
+ Current Memory Usage: 1002.62 Meg
+
+ Total Signals          : 10
+ Total Nets             : 11
+ Total Signal Drivers   : 10
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 9
+ Total Traceable Variables  : 8
+ Total Scalar Nets and Variables : 371
+Total Line Count : 33
+
+** Failure:Simulation Completed
+User(VHDL) Code Called Simulation Stop
+In process experiment2-9-2.vhd:16 
+ 
+
+
+ Total Simulation Time: 0.109201 sec
+
+ Current Memory Usage: 1159.88 Meg
+
+Wed Apr 01 11:38:20 2015
+

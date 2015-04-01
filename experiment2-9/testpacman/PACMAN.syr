@@ -1,0 +1,1457 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.47 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.47 secs
+ 
+--> Reading design: PACMAN.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "PACMAN.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "PACMAN"
+Output Format                      : NGC
+Target Device                      : xc3s200-5-ft256
+
+---- Source Options
+Top Module Name                    : PACMAN
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/T80_Pack.vhd" in Library work.
+Package <T80_Pack> compiled.
+Compiling vhdl file "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/T80_MCode.vhd" in Library work.
+Entity <T80_MCode> compiled.
+Entity <T80_MCode> (Architecture <rtl>) compiled.
+Compiling vhdl file "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/T80_ALU.vhd" in Library work.
+Entity <T80_ALU> compiled.
+Entity <T80_ALU> (Architecture <rtl>) compiled.
+Compiling vhdl file "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pkg_pacman_xilinx_prims.vhd" in Library work.
+Package <pkg_pacman_xilinx_prims> compiled.
+Package body <pkg_pacman_xilinx_prims> compiled.
+Compiling vhdl file "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pkg_pacman.vhd" in Library work.
+Package <pkg_pacman> compiled.
+Package body <pkg_pacman> compiled.
+Compiling vhdl file "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/roms/pacrom_1m.vhd" in Library work.
+Entity <PACROM_1M> compiled.
+Entity <PACROM_1M> (Architecture <RTL>) compiled.
+Compiling vhdl file "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman_mul4.vhd" in Library work.
+Entity <PACMAN_MUL_PARTIAL> compiled.
+Entity <PACMAN_MUL_PARTIAL> (Architecture <RTL>) compiled.
+Entity <PACMAN_MUL4> compiled.
+Entity <PACMAN_MUL4> (Architecture <RTL>) compiled.
+Compiling vhdl file "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/roms/pacrom_5e.vhd" in Library work.
+Entity <PACROM_5E> compiled.
+Entity <PACROM_5E> (Architecture <RTL>) compiled.
+Compiling vhdl file "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/roms/pacrom_5f.vhd" in Library work.
+Entity <PACROM_5F> compiled.
+Entity <PACROM_5F> (Architecture <RTL>) compiled.
+Compiling vhdl file "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/roms/pacrom_4a_dst.vhd" in Library work.
+Entity <PACROM_4A_DST> compiled.
+Entity <PACROM_4A_DST> (Architecture <RTL>) compiled.
+Compiling vhdl file "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/roms/pacrom_7f_dst.vhd" in Library work.
+Entity <PACROM_7F_DST> compiled.
+Entity <PACROM_7F_DST> (Architecture <RTL>) compiled.
+Compiling vhdl file "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/T80.vhd" in Library work.
+Entity <T80> compiled.
+Entity <T80> (Architecture <rtl>) compiled.
+Compiling vhdl file "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/T80sed.vhd" in Library work.
+Entity <T80sed> compiled.
+Entity <T80sed> (Architecture <rtl>) compiled.
+Compiling vhdl file "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman_vram_addr.vhd" in Library work.
+Entity <X74_157> compiled.
+Entity <X74_157> (Architecture <RTL>) compiled.
+Entity <X74_257> compiled.
+Entity <X74_257> (Architecture <RTL>) compiled.
+Entity <PACMAN_VRAM_ADDR> compiled.
+Entity <PACMAN_VRAM_ADDR> (Architecture <RTL>) compiled.
+Compiling vhdl file "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman_rams.vhd" in Library work.
+Entity <PACMAN_RAMS> compiled.
+Entity <PACMAN_RAMS> (Architecture <RTL>) compiled.
+Compiling vhdl file "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman_video.vhd" in Library work.
+Entity <PACMAN_VIDEO> compiled.
+Entity <PACMAN_VIDEO> (Architecture <RTL>) compiled.
+Compiling vhdl file "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman_audio.vhd" in Library work.
+Entity <PACMAN_AUDIO> compiled.
+Entity <PACMAN_AUDIO> (Architecture <RTL>) compiled.
+Compiling vhdl file "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman.vhd" in Library work.
+Entity <PACMAN> compiled.
+Entity <PACMAN> (Architecture <RTL>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <PACMAN> in library <work> (architecture <RTL>).
+
+Analyzing hierarchy for entity <T80sed> in library <work> (architecture <rtl>) with generics.
+	Mode = 0
+
+Analyzing hierarchy for entity <PACMAN_VRAM_ADDR> in library <work> (architecture <RTL>).
+
+Analyzing hierarchy for entity <PACMAN_RAMS> in library <work> (architecture <RTL>).
+
+Analyzing hierarchy for entity <PACMAN_VIDEO> in library <work> (architecture <RTL>).
+
+Analyzing hierarchy for entity <PACMAN_AUDIO> in library <work> (architecture <RTL>).
+
+Analyzing hierarchy for entity <T80> in library <work> (architecture <rtl>) with generics.
+	Flag_C = 0
+	Flag_H = 4
+	Flag_N = 1
+	Flag_P = 2
+	Flag_S = 7
+	Flag_X = 3
+	Flag_Y = 5
+	Flag_Z = 6
+	Mode = 0
+
+Analyzing hierarchy for entity <X74_157> in library <work> (architecture <RTL>).
+
+Analyzing hierarchy for entity <X74_257> in library <work> (architecture <RTL>).
+
+Analyzing hierarchy for entity <PACROM_5E> in library <work> (architecture <RTL>).
+
+Analyzing hierarchy for entity <PACROM_5F> in library <work> (architecture <RTL>).
+
+Analyzing hierarchy for entity <PACROM_4A_DST> in library <work> (architecture <RTL>).
+
+Analyzing hierarchy for entity <PACROM_7F_DST> in library <work> (architecture <RTL>).
+
+Analyzing hierarchy for entity <PACROM_1M> in library <work> (architecture <RTL>).
+
+Analyzing hierarchy for entity <PACMAN_MUL4> in library <work> (architecture <RTL>).
+
+Analyzing hierarchy for entity <T80_MCode> in library <work> (architecture <rtl>) with generics.
+	Flag_C = 0
+	Flag_H = 4
+	Flag_N = 1
+	Flag_P = 2
+	Flag_S = 7
+	Flag_X = 3
+	Flag_Y = 5
+	Flag_Z = 6
+	Mode = 0
+
+Analyzing hierarchy for entity <T80_ALU> in library <work> (architecture <rtl>) with generics.
+	Flag_C = 0
+	Flag_H = 4
+	Flag_N = 1
+	Flag_P = 2
+	Flag_S = 7
+	Flag_X = 3
+	Flag_Y = 5
+	Flag_Z = 6
+	Mode = 0
+
+Analyzing hierarchy for entity <PACMAN_MUL_PARTIAL> in library <work> (architecture <RTL>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <PACMAN> in library <work> (Architecture <RTL>).
+WARNING:Xst:2211 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman.vhd" line 220: Instantiating black box module <IBUFG>.
+WARNING:Xst:753 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman.vhd" line 223: Unconnected output port 'CLK90' of component 'CLKDLL'.
+WARNING:Xst:753 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman.vhd" line 223: Unconnected output port 'CLK180' of component 'CLKDLL'.
+WARNING:Xst:753 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman.vhd" line 223: Unconnected output port 'CLK270' of component 'CLKDLL'.
+WARNING:Xst:753 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman.vhd" line 223: Unconnected output port 'CLK2X' of component 'CLKDLL'.
+WARNING:Xst:753 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman.vhd" line 223: Unconnected output port 'LOCKED' of component 'CLKDLL'.
+WARNING:Xst:2211 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman.vhd" line 223: Instantiating black box module <CLKDLL>.
+    Set user-defined property "CLKDV_DIVIDE =  6.5" for instance <CLKDLLA> in unit <PACMAN>.
+WARNING:Xst:2211 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman.vhd" line 237: Instantiating black box module <BUFG>.
+WARNING:Xst:753 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman.vhd" line 239: Unconnected output port 'CLK90' of component 'CLKDLL'.
+WARNING:Xst:753 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman.vhd" line 239: Unconnected output port 'CLK180' of component 'CLKDLL'.
+WARNING:Xst:753 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman.vhd" line 239: Unconnected output port 'CLK270' of component 'CLKDLL'.
+WARNING:Xst:753 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman.vhd" line 239: Unconnected output port 'CLK2X' of component 'CLKDLL'.
+WARNING:Xst:753 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman.vhd" line 239: Unconnected output port 'LOCKED' of component 'CLKDLL'.
+WARNING:Xst:2211 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman.vhd" line 239: Instantiating black box module <CLKDLL>.
+    Set user-defined property "CLKDV_DIVIDE =  3" for instance <CLKDLLB> in unit <PACMAN>.
+WARNING:Xst:2211 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman.vhd" line 246: Instantiating black box module <BUFG>.
+WARNING:Xst:2211 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman.vhd" line 720: Instantiating black box module <PULLUP>.
+WARNING:Xst:2211 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman.vhd" line 721: Instantiating black box module <PULLUP>.
+WARNING:Xst:2211 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman.vhd" line 722: Instantiating black box module <PULLUP>.
+WARNING:Xst:2211 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman.vhd" line 723: Instantiating black box module <PULLUP>.
+WARNING:Xst:2211 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman.vhd" line 724: Instantiating black box module <PULLUP>.
+WARNING:Xst:2211 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman.vhd" line 725: Instantiating black box module <PULLUP>.
+WARNING:Xst:2211 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman.vhd" line 726: Instantiating black box module <PULLUP>.
+WARNING:Xst:2211 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman.vhd" line 727: Instantiating black box module <PULLUP>.
+WARNING:Xst:2211 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman.vhd" line 728: Instantiating black box module <PULLUP>.
+WARNING:Xst:2211 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman.vhd" line 729: Instantiating black box module <PULLUP>.
+INFO:Xst:2679 - Register <in1_reg<7>> in unit <PACMAN> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <in1_reg<4>> in unit <PACMAN> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <in1_reg<3>> in unit <PACMAN> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <in1_reg<2>> in unit <PACMAN> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <in1_reg<1>> in unit <PACMAN> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <in1_reg<0>> in unit <PACMAN> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <freeze> in unit <PACMAN> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <dipsw_reg<7>> in unit <PACMAN> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <dipsw_reg<6>> in unit <PACMAN> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <dipsw_reg<5>> in unit <PACMAN> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <dipsw_reg<4>> in unit <PACMAN> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <dipsw_reg<3>> in unit <PACMAN> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <dipsw_reg<2>> in unit <PACMAN> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <dipsw_reg<1>> in unit <PACMAN> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <dipsw_reg<0>> in unit <PACMAN> has a constant value of 1 during circuit operation. The register is replaced by logic.
+Entity <PACMAN> analyzed. Unit <PACMAN> generated.
+
+Analyzing generic Entity <T80sed> in library <work> (Architecture <rtl>).
+	Mode = 0
+WARNING:Xst:753 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/T80sed.vhd" line 103: Unconnected output port 'IntE' of component 'T80'.
+WARNING:Xst:753 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/T80sed.vhd" line 103: Unconnected output port 'Stop' of component 'T80'.
+Entity <T80sed> analyzed. Unit <T80sed> generated.
+
+Analyzing generic Entity <T80> in library <work> (Architecture <rtl>).
+	Flag_C = 0
+	Flag_H = 4
+	Flag_N = 1
+	Flag_P = 2
+	Flag_S = 7
+	Flag_X = 3
+	Flag_Y = 5
+	Flag_Z = 6
+	Mode = 0
+Entity <T80> analyzed. Unit <T80> generated.
+
+Analyzing generic Entity <T80_MCode> in library <work> (Architecture <rtl>).
+	Flag_C = 0
+	Flag_H = 4
+	Flag_N = 1
+	Flag_P = 2
+	Flag_S = 7
+	Flag_X = 3
+	Flag_Y = 5
+	Flag_Z = 6
+	Mode = 0
+Entity <T80_MCode> analyzed. Unit <T80_MCode> generated.
+
+Analyzing generic Entity <T80_ALU> in library <work> (Architecture <rtl>).
+	Flag_C = 0
+	Flag_H = 4
+	Flag_N = 1
+	Flag_P = 2
+	Flag_S = 7
+	Flag_X = 3
+	Flag_Y = 5
+	Flag_Z = 6
+	Mode = 0
+WARNING:Xst:819 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/T80_ALU.vhd" line 148: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <Z16>
+Entity <T80_ALU> analyzed. Unit <T80_ALU> generated.
+
+Analyzing Entity <PACMAN_VRAM_ADDR> in library <work> (Architecture <RTL>).
+Entity <PACMAN_VRAM_ADDR> analyzed. Unit <PACMAN_VRAM_ADDR> generated.
+
+Analyzing Entity <X74_157> in library <work> (Architecture <RTL>).
+Entity <X74_157> analyzed. Unit <X74_157> generated.
+
+Analyzing Entity <X74_257> in library <work> (Architecture <RTL>).
+Entity <X74_257> analyzed. Unit <X74_257> generated.
+
+Analyzing Entity <PACMAN_RAMS> in library <work> (Architecture <RTL>).
+WARNING:Xst:2211 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman_rams.vhd" line 76: Instantiating black box module <RAMB4_S4>.
+WARNING:Xst:2211 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman_rams.vhd" line 87: Instantiating black box module <RAMB4_S4>.
+WARNING:Xst:2211 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman_rams.vhd" line 98: Instantiating black box module <RAMB4_S4>.
+WARNING:Xst:2211 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman_rams.vhd" line 109: Instantiating black box module <RAMB4_S4>.
+WARNING:Xst:2211 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman_rams.vhd" line 120: Instantiating black box module <RAMB4_S4>.
+WARNING:Xst:2211 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman_rams.vhd" line 131: Instantiating black box module <RAMB4_S4>.
+Entity <PACMAN_RAMS> analyzed. Unit <PACMAN_RAMS> generated.
+
+Analyzing Entity <PACMAN_VIDEO> in library <work> (Architecture <RTL>).
+WARNING:Xst:753 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman_video.vhd" line 146: Unconnected output port 'SPO' of component 'RAM16X1D'.
+WARNING:Xst:2211 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman_video.vhd" line 146: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:753 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman_video.vhd" line 146: Unconnected output port 'SPO' of component 'RAM16X1D'.
+WARNING:Xst:2211 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman_video.vhd" line 146: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:753 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman_video.vhd" line 146: Unconnected output port 'SPO' of component 'RAM16X1D'.
+WARNING:Xst:2211 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman_video.vhd" line 146: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:753 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman_video.vhd" line 146: Unconnected output port 'SPO' of component 'RAM16X1D'.
+WARNING:Xst:2211 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman_video.vhd" line 146: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:753 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman_video.vhd" line 146: Unconnected output port 'SPO' of component 'RAM16X1D'.
+WARNING:Xst:2211 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman_video.vhd" line 146: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:753 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman_video.vhd" line 146: Unconnected output port 'SPO' of component 'RAM16X1D'.
+WARNING:Xst:2211 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman_video.vhd" line 146: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:753 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman_video.vhd" line 146: Unconnected output port 'SPO' of component 'RAM16X1D'.
+WARNING:Xst:2211 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman_video.vhd" line 146: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:753 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman_video.vhd" line 146: Unconnected output port 'SPO' of component 'RAM16X1D'.
+WARNING:Xst:2211 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman_video.vhd" line 146: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:753 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman_video.vhd" line 330: Unconnected output port 'DOA' of component 'RAMB4_S4_S4'.
+WARNING:Xst:2211 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman_video.vhd" line 330: Instantiating black box module <RAMB4_S4_S4>.
+Entity <PACMAN_VIDEO> analyzed. Unit <PACMAN_VIDEO> generated.
+
+Analyzing Entity <PACROM_5E> in library <work> (Architecture <RTL>).
+WARNING:Xst:2211 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/roms/pacrom_5e.vhd" line 120: Instantiating black box module <RAMB4_S1>.
+    Set user-defined property "INIT_00 =  3C003C00330030003C003F003F003F0003003F003F003F000F003F0003003300" for instance <rom0.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_01 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_02 =  04000000000000080000000000000000FF000000FF000000FFFF0000FFFF0000" for instance <rom0.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_03 =  38031CC01CC03803000008000E003E0002005E001E0009000600040004004100" for instance <rom0.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_04 =  41003300290030002800010008003F0040003C003C00310040003E0012000000" for instance <rom0.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_05 =  00000000000000000000080004000400350024003100080004003E0041003E00" for instance <rom0.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_06 =  00000000000000000000000000000000000001003C0028000800290000000000" for instance <rom0.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_07 =  000030003C003100080035000000310008002400120031000000000000000000" for instance <rom0.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_08 =  0000000000000000000000000000000000000400F000A0002000A40000000000" for instance <rom0.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_09 =  0000C000F000C4002000D4000000C400200090004800C4000000000000000000" for instance <rom0.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_0A =  0000000000000000000000000000000000001000C00083008200900002000000" for instance <rom0.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_0B =  00000000C3001300830050000300100083004000220011000300000000000000" for instance <rom0.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_0C =  000000000000000000000000000000000000400000000F000A0042000A000000" for instance <rom0.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_0D =  000000000C004F000C0042000D0040000C000200890044000C00000000000000" for instance <rom0.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_0E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_0F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst> in unit <PACROM_5E>.
+WARNING:Xst:2211 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/roms/pacrom_5e.vhd" line 169: Instantiating black box module <RAMB4_S1>.
+    Set user-defined property "INIT_00 =  3030303F333C303F333F3333333F333F0303303F303F3303033F033F0303333F" for instance <rom1.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_01 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom1.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_02 =  02600018000000180000000000000000FF000000FF000000FFFF0000FFFF0000" for instance <rom1.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_03 =  70070EE00EE0700700000420113C113E0130203E103E0504013E023F143C213E" for instance <rom1.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_04 =  213E15442D44107F1446013C043C1144203E1040107E117E203E117E12410000" for instance <rom1.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_05 =  00000000000000000000047E0A100A61111E2210111E0408083E1143213D1140" for instance <rom1.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_06 =  000000000000000000000000000000000000013C107E1446043C2D4400000000" for instance <rom1.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_07 =  0000107F107E117E043C111E0000117E043C22101241117E0000000000000000" for instance <rom1.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_08 =  00000000000000000000000000000000000004F040F8501910F1B41000010000" for instance <rom1.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_09 =  000040FC40F944F910F14478000044F810F18840480444F90001000000000000" for instance <rom1.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_0A =  00000000000000000000000000000000000010C000E3416741C4D04302040000" for instance <rom1.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_0B =  000000F001E711E741C710E3010110E041C72003221111E40107000000000000" for instance <rom1.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_0C =  0000000000000000000000000000000000004000000F049F0511410F0B110000" for instance <rom1.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_0D =  000000C0049F449F041F418F04074080041F810F88444490041F000000000000" for instance <rom1.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_0E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom1.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_0F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom1.inst> in unit <PACROM_5E>.
+WARNING:Xst:2211 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/roms/pacrom_5e.vhd" line 218: Instantiating black box module <RAMB4_S1>.
+    Set user-defined property "INIT_00 =  3030303033333030333333333303333303033033300333030303033003033333" for instance <rom2.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_01 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom2.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_02 =  0110001800000018000000000000000000FF000000FF0000FFFF0000FFFF0000" for instance <rom2.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_03 =  E00E07700770E00E00000600114211410108114110410302114111100C081143" for instance <rom2.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_04 =  114319223322102012280142040811221141102010201123114111230A220000" for instance <rom2.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_05 =  00000000000000000000022011081112112B2228112304081141112411421120" for instance <rom2.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_06 =  0000000000000000000000000000000000000142102012280408332200000000" for instance <rom2.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_07 =  00001020102011230408112B00001123040822280A2211230000000000000000" for instance <rom2.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_08 =  0000000000000000000000000000000000000408408148A01020CC8800000000" for instance <rom2.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_09 =  000040804080448C102044AC0000448C102088A02888448C0000000000000000" for instance <rom2.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_0A =  0000000000000000000000000000000000001020000421824182302003020000" for instance <rom2.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_0B =  0000000001021132418210B00102103041822080A22210320102000000000000" for instance <rom2.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_0C =  000000000000000000000000000000000000408000108408040AC1820C080000" for instance <rom2.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_0D =  00000000040844C8040841C2040A40C004088102888A42C80408000000000000" for instance <rom2.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_0E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom2.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_0F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom2.inst> in unit <PACROM_5E>.
+WARNING:Xst:2211 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/roms/pacrom_5e.vhd" line 267: Instantiating black box module <RAMB4_S1>.
+    Set user-defined property "INIT_00 =  3F303F303C333F303F333F333F033F333F033F333F0333033F033F3003033F33" for instance <rom3.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_01 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom3.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_02 =  0008000000380000000000000000000000FF000000FF0000FFFF0000FFFF0000" for instance <rom3.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_03 =  C01C03380338C01C000002100E010E411F040E611F01011E0E010E0804080E41" for instance <rom3.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_04 =  0E41112221221820113007420F0811220E4F1F201F201E210E401E21043E0000" for instance <rom3.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_05 =  000000000000000000001F101104110A1125412411211F080E021E280E4D1E20" for instance <rom3.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_06 =  00000000000000000000000000000000000007421F2011300F08212200000000" for instance <rom3.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_07 =  000018201F201E210F08112500001E210F084124043E1E210000000000000000" for instance <rom3.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_08 =  0000000000000000000000000000000000001C087C8144C03C20848800000000" for instance <rom3.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_09 =  000060807C8078843C204494000078843C20049011F878840000000000000000" for instance <rom3.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_0A =  0000000000000000000000000000000000007020F0041102F183102002020000" for instance <rom3.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_0B =  00008000F102E112F18210500102E010F182104044E2E0130102000000000000" for instance <rom3.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_0C =  000000000000000000000000000000000000C080C1104708C40C438208080000" for instance <rom3.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_0D =  00000000C6088748C708434204098040C70843029089814F0708000000000000" for instance <rom3.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_0E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom3.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_0F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom3.inst> in unit <PACROM_5E>.
+WARNING:Xst:2211 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/roms/pacrom_5e.vhd" line 316: Instantiating black box module <RAMB4_S1>.
+    Set user-defined property "INIT_00 =  3C003C00330030003C003F003F003F0003003F003F003F000F003F0003003300" for instance <rom4.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_01 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom4.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_02 =  04000000000000080000000000000000FF00FF0000000000FFFFFFFF00000000" for instance <rom4.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_03 =  38031CC01CC03803000008000E003E0002005E001E0009000600040004004100" for instance <rom4.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_04 =  41003300290030002800010008003F0040003C003C00310040003E0012000000" for instance <rom4.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_05 =  00000000000000000000080004000400350024003100080004003E0041003E00" for instance <rom4.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_06 =  00000000000000000000000000000000000001003C0028000800290000000000" for instance <rom4.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_07 =  000030003C003100080035000000310008002400120031000000000000000000" for instance <rom4.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_08 =  0000000000000000000000000000000000000400F000A0002000A40000000000" for instance <rom4.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_09 =  0000C000F000C4002000D4000000C400200090004800C4000000000000000000" for instance <rom4.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_0A =  0000000000000000000000000000000000001000C00083008200900002000000" for instance <rom4.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_0B =  00000000C3001300830050000300100083004000220011000300000000000000" for instance <rom4.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_0C =  000000000000000000000000000000000000400000000F000A0042000A000000" for instance <rom4.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_0D =  000000000C004F000C0042000D0040000C000200890044000C00000000000000" for instance <rom4.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_0E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom4.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_0F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom4.inst> in unit <PACROM_5E>.
+WARNING:Xst:2211 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/roms/pacrom_5e.vhd" line 365: Instantiating black box module <RAMB4_S1>.
+    Set user-defined property "INIT_00 =  3030303F333C303F333F3333333F333F0303303F303F3303033F033F0303333F" for instance <rom5.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_01 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom5.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_02 =  02600018000000180000000000000000FF00FF0000000000FFFFFFFF00000000" for instance <rom5.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_03 =  70070EE00EE0700700000420113C113E0130203E103E0504013E023F143C213E" for instance <rom5.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_04 =  213E15442D44107F1446013C043C1144203E1040107E117E203E117E12410000" for instance <rom5.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_05 =  00000000000000000000047E0A100A61111E2210111E0408083E1143213D1140" for instance <rom5.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_06 =  000000000000000000000000000000000000013C107E1446043C2D4400000000" for instance <rom5.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_07 =  0000107F107E117E043C111E0000117E043C22101241117E0000000000000000" for instance <rom5.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_08 =  00000000000000000000000000000000000004F040F8501910F1B41000010000" for instance <rom5.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_09 =  000040FC40F944F910F14478000044F810F18840480444F90001000000000000" for instance <rom5.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_0A =  00000000000000000000000000000000000010C000E3416741C4D04302040000" for instance <rom5.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_0B =  000000F001E711E741C710E3010110E041C72003221111E40107000000000000" for instance <rom5.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_0C =  0000000000000000000000000000000000004000000F049F0511410F0B110000" for instance <rom5.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_0D =  000000C0049F449F041F418F04074080041F810F88444490041F000000000000" for instance <rom5.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_0E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom5.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_0F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom5.inst> in unit <PACROM_5E>.
+WARNING:Xst:2211 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/roms/pacrom_5e.vhd" line 414: Instantiating black box module <RAMB4_S1>.
+    Set user-defined property "INIT_00 =  3030303033333030333333333303333303033033300333030303033003033333" for instance <rom6.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_01 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom6.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_02 =  0110001800000018000000000000000000FF00FF00000000FFFFFFFF00000000" for instance <rom6.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_03 =  E00E07700770E00E00000600114211410108114110410302114111100C081143" for instance <rom6.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_04 =  114319223322102012280142040811221141102010201123114111230A220000" for instance <rom6.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_05 =  00000000000000000000022011081112112B2228112304081141112411421120" for instance <rom6.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_06 =  0000000000000000000000000000000000000142102012280408332200000000" for instance <rom6.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_07 =  00001020102011230408112B00001123040822280A2211230000000000000000" for instance <rom6.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_08 =  0000000000000000000000000000000000000408408148A01020CC8800000000" for instance <rom6.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_09 =  000040804080448C102044AC0000448C102088A02888448C0000000000000000" for instance <rom6.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_0A =  0000000000000000000000000000000000001020000421824182302003020000" for instance <rom6.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_0B =  0000000001021132418210B00102103041822080A22210320102000000000000" for instance <rom6.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_0C =  000000000000000000000000000000000000408000108408040AC1820C080000" for instance <rom6.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_0D =  00000000040844C8040841C2040A40C004088102888A42C80408000000000000" for instance <rom6.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_0E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom6.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_0F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom6.inst> in unit <PACROM_5E>.
+WARNING:Xst:2211 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/roms/pacrom_5e.vhd" line 463: Instantiating black box module <RAMB4_S1>.
+    Set user-defined property "INIT_00 =  3F303F303C333F303F333F333F033F333F033F333F0333033F033F3003033F33" for instance <rom7.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_01 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom7.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_02 =  0008000000380000000000000000000000FF00FF00000000FFFFFFFF00000000" for instance <rom7.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_03 =  C01C03380338C01C000002100E010E411F040E611F01011E0E010E0804080E41" for instance <rom7.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_04 =  0E41112221221820113007420F0811220E4F1F201F201E210E401E21043E0000" for instance <rom7.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_05 =  000000000000000000001F101104110A1125412411211F080E021E280E4D1E20" for instance <rom7.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_06 =  00000000000000000000000000000000000007421F2011300F08212200000000" for instance <rom7.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_07 =  000018201F201E210F08112500001E210F084124043E1E210000000000000000" for instance <rom7.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_08 =  0000000000000000000000000000000000001C087C8144C03C20848800000000" for instance <rom7.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_09 =  000060807C8078843C204494000078843C20049011F878840000000000000000" for instance <rom7.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_0A =  0000000000000000000000000000000000007020F0041102F183102002020000" for instance <rom7.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_0B =  00008000F102E112F18210500102E010F182104044E2E0130102000000000000" for instance <rom7.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_0C =  000000000000000000000000000000000000C080C1104708C40C438208080000" for instance <rom7.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_0D =  00000000C6088748C708434204098040C70843029089814F0708000000000000" for instance <rom7.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_0E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom7.inst> in unit <PACROM_5E>.
+    Set user-defined property "INIT_0F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom7.inst> in unit <PACROM_5E>.
+Entity <PACROM_5E> analyzed. Unit <PACROM_5E> generated.
+
+Analyzing Entity <PACROM_5F> in library <work> (Architecture <RTL>).
+WARNING:Xst:2211 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/roms/pacrom_5f.vhd" line 120: Instantiating black box module <RAMB4_S1>.
+    Set user-defined property "INIT_00 =  05000100FCFFC000030005001C1FC0001F000000FC130000070E0000CC1F0000" for instance <rom0.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_01 =  0000010000008000000000000000000000000000000000000000000000000000" for instance <rom0.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_02 =  0000000000000000000000000000000001010100808080000000010000008000" for instance <rom0.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_03 =  0003000000C00000000000000000000000000000000000000000000000000000" for instance <rom0.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_04 =  05000100FCFFC000030005001C1FC0001F000000FC130000070E0000CC1F0000" for instance <rom0.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_05 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_06 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_07 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_08 =  000000000000000000000000E000000000000100000CC0000000000030000000" for instance <rom0.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_09 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_0A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_0B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_0C =  600CFE00000000000000180000000000A0408C000000000078B0600000000000" for instance <rom0.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_0D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_0E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_0F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst> in unit <PACROM_5F>.
+WARNING:Xst:2211 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/roms/pacrom_5f.vhd" line 169: Instantiating black box module <RAMB4_S1>.
+    Set user-defined property "INIT_00 =  0E030000FE7F0000000300007C7E0000000000007E1F000000000000723F0000" for instance <rom1.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_01 =  0000010000008000000000000000000000000000000000000000000000000000" for instance <rom1.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_02 =  0000000000000000000000000000000001010100808080000000010000008000" for instance <rom1.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_03 =  0001000000800000000000000000000000000000000000000000000000000000" for instance <rom1.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_04 =  0E030000FE7F0000000300007C7E0000000000007E1F000000000000723F0000" for instance <rom1.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_05 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom1.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_06 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom1.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_07 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom1.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_08 =  000000000080000000000000028100000000000000E00000000000000C000000" for instance <rom1.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_09 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom1.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_0A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom1.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_0B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom1.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_0C =  80003C0000000000800000000000000040001000000000008000800000000000" for instance <rom1.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_0D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom1.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_0E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom1.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_0F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom1.inst> in unit <PACROM_5F>.
+WARNING:Xst:2211 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/roms/pacrom_5f.vhd" line 218: Instantiating black box module <RAMB4_S1>.
+    Set user-defined property "INIT_00 =  000600007E7E000001060000EF7E0000000700003FFE00000003000077FE0000" for instance <rom2.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_01 =  0000000100000080000000000000000000000000000000000000000000000000" for instance <rom2.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_02 =  0000000000000000000000000000000001010001808000800000000100000080" for instance <rom2.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_03 =  0100000080000000000000000000000000000000000000000000000000000000" for instance <rom2.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_04 =  000600007E7E000001060000EF7E0000000700003FFE00000003000077FE0000" for instance <rom2.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_05 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom2.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_06 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom2.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_07 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom2.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_08 =  0000000001000000000000001000000001000000C00000000000000008000000" for instance <rom2.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_09 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom2.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_0A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom2.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_0B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom2.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_0C =  0000000000000000701800C00000000000380000000000000000000000000000" for instance <rom2.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_0D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom2.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_0E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom2.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_0F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom2.inst> in unit <PACROM_5F>.
+WARNING:Xst:2211 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/roms/pacrom_5f.vhd" line 267: Instantiating black box module <RAMB4_S1>.
+    Set user-defined property "INIT_00 =  0F0B0000FF0C00000F080017FB3C00C00F00000EF33C000003070001FF0C00C0" for instance <rom3.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_01 =  0000000100000080000000000000000000000000000000000000000000000000" for instance <rom3.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_02 =  0000000000000000000000000000000001010001808000800000000100000080" for instance <rom3.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_03 =  03000000C0000000000000000000000000000000000000000000000000000000" for instance <rom3.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_04 =  0F0B0000FF0C00000F080017FB3C00C00F00000EF33C000003070001FF0C00C0" for instance <rom3.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_05 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom3.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_06 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom3.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_07 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom3.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_08 =  00000000003000600000000004000000000000010C0000C00000000000F00000" for instance <rom3.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_09 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom3.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_0A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom3.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_0B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom3.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_0C =  B0040000000000008070006000000000B0400040000000004038008E00000000" for instance <rom3.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_0D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom3.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_0E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom3.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_0F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom3.inst> in unit <PACROM_5F>.
+WARNING:Xst:2211 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/roms/pacrom_5f.vhd" line 316: Instantiating black box module <RAMB4_S1>.
+    Set user-defined property "INIT_00 =  650CFF00F0E0C00003001D00F81CC000BF408D00F81CC0007FBE6000F8180000" for instance <rom4.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_01 =  0101000080800000000000000000000000000000000000000000000000000000" for instance <rom4.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_02 =  0000000000000000000000000000000000000000000000000101000080800000" for instance <rom4.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_03 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom4.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_04 =  05000100F0E0C00003000500181CC0001F000000F8100000070E0000C8180000" for instance <rom4.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_05 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom4.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_06 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom4.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_07 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom4.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_08 =  000000000000000000000000E000000000000100000CC0000000000030000000" for instance <rom4.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_09 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom4.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_0A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom4.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_0B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom4.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_0C =  600CFE00000000000000180000000000A0408C000000000078B0600000000000" for instance <rom4.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_0D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom4.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_0E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom4.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_0F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom4.inst> in unit <PACROM_5F>.
+WARNING:Xst:2211 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/roms/pacrom_5f.vhd" line 365: Instantiating black box module <RAMB4_S1>.
+    Set user-defined property "INIT_00 =  8E033C00E0800000800300007A9100004000100078F00000800080007C300000" for instance <rom5.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_01 =  0101000080800000000000000000000000000000000000000000000000000000" for instance <rom5.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_02 =  0000000000000000000000000000000000000000000000000101000080800000" for instance <rom5.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_03 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom5.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_04 =  0E030000E0000000000300007810000000000000781000000000000070300000" for instance <rom5.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_05 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom5.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_06 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom5.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_07 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom5.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_08 =  000000000080000000000000028100000000000000E00000000000000C000000" for instance <rom5.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_09 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom5.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_0A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom5.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_0B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom5.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_0C =  80003C0000000000800000000000000040001000000000008000800000000000" for instance <rom5.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_0D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom5.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_0E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom5.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_0F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom5.inst> in unit <PACROM_5F>.
+WARNING:Xst:2211 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/roms/pacrom_5f.vhd" line 414: Instantiating black box module <RAMB4_S1>.
+    Set user-defined property "INIT_00 =  0006000079600000711E00C0F0780000013F0000F0F800000003000078F80000" for instance <rom6.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_01 =  0101000080800000000000000000000000000000000000000000000000000000" for instance <rom6.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_02 =  0000000000000000000000000000000000000000000000000101000080800000" for instance <rom6.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_03 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom6.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_04 =  000600007860000001060000E07800000007000030F800000003000070F80000" for instance <rom6.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_05 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom6.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_06 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom6.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_07 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom6.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_08 =  0000000001000000000000001000000001000000C00000000000000008000000" for instance <rom6.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_09 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom6.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_0A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom6.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_0B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom6.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_0C =  0000000000000000701800C00000000000380000000000000000000000000000" for instance <rom6.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_0D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom6.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_0E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom6.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_0F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom6.inst> in unit <PACROM_5F>.
+WARNING:Xst:2211 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/roms/pacrom_5f.vhd" line 463: Instantiating black box module <RAMB4_S1>.
+    Set user-defined property "INIT_00 =  BF0F0000F03000608F780077FC3000C0BF40004FFC3000C0433F008FF0F000C0" for instance <rom7.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_01 =  0101000080800000000000000000000000000000000000000000000000000000" for instance <rom7.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_02 =  0000000000000000000000000000000000000000000000000101000080800000" for instance <rom7.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_03 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom7.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_04 =  0F0B0000F00000000F080017F83000C00F00000EF030000003070001F00000C0" for instance <rom7.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_05 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom7.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_06 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom7.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_07 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom7.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_08 =  00000000003000600000000004000000000000010C0000C00000000000F00000" for instance <rom7.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_09 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom7.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_0A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom7.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_0B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom7.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_0C =  B0040000000000008070006000000000B0400040000000004038008E00000000" for instance <rom7.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_0D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom7.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_0E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom7.inst> in unit <PACROM_5F>.
+    Set user-defined property "INIT_0F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom7.inst> in unit <PACROM_5F>.
+Entity <PACROM_5F> analyzed. Unit <PACROM_5F> generated.
+
+Analyzing Entity <PACROM_4A_DST> in library <work> (Architecture <RTL>).
+Entity <PACROM_4A_DST> analyzed. Unit <PACROM_4A_DST> generated.
+
+Analyzing Entity <PACROM_7F_DST> in library <work> (Architecture <RTL>).
+Entity <PACROM_7F_DST> analyzed. Unit <PACROM_7F_DST> generated.
+
+Analyzing Entity <PACMAN_AUDIO> in library <work> (Architecture <RTL>).
+WARNING:Xst:753 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman_audio.vhd" line 119: Unconnected output port 'SPO' of component 'RAM16X1D'.
+WARNING:Xst:2211 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman_audio.vhd" line 119: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:753 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman_audio.vhd" line 119: Unconnected output port 'SPO' of component 'RAM16X1D'.
+WARNING:Xst:2211 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman_audio.vhd" line 119: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:753 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman_audio.vhd" line 119: Unconnected output port 'SPO' of component 'RAM16X1D'.
+WARNING:Xst:2211 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman_audio.vhd" line 119: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:753 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman_audio.vhd" line 119: Unconnected output port 'SPO' of component 'RAM16X1D'.
+WARNING:Xst:2211 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman_audio.vhd" line 119: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:753 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman_audio.vhd" line 139: Unconnected output port 'SPO' of component 'RAM16X1D'.
+WARNING:Xst:2211 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman_audio.vhd" line 139: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:753 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman_audio.vhd" line 139: Unconnected output port 'SPO' of component 'RAM16X1D'.
+WARNING:Xst:2211 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman_audio.vhd" line 139: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:753 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman_audio.vhd" line 139: Unconnected output port 'SPO' of component 'RAM16X1D'.
+WARNING:Xst:2211 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman_audio.vhd" line 139: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:753 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman_audio.vhd" line 139: Unconnected output port 'SPO' of component 'RAM16X1D'.
+WARNING:Xst:2211 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman_audio.vhd" line 139: Instantiating black box module <RAM16X1D>.
+Entity <PACMAN_AUDIO> analyzed. Unit <PACMAN_AUDIO> generated.
+
+Analyzing Entity <PACROM_1M> in library <work> (Architecture <RTL>).
+WARNING:Xst:2211 - "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/roms/pacrom_1m.vhd" line 120: Instantiating black box module <RAMB4_S8>.
+    Set user-defined property "INIT_00 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst> in unit <PACROM_1M>.
+    Set user-defined property "INIT_01 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst> in unit <PACROM_1M>.
+    Set user-defined property "INIT_02 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst> in unit <PACROM_1M>.
+    Set user-defined property "INIT_03 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst> in unit <PACROM_1M>.
+    Set user-defined property "INIT_04 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst> in unit <PACROM_1M>.
+    Set user-defined property "INIT_05 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst> in unit <PACROM_1M>.
+    Set user-defined property "INIT_06 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst> in unit <PACROM_1M>.
+    Set user-defined property "INIT_07 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst> in unit <PACROM_1M>.
+    Set user-defined property "INIT_08 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst> in unit <PACROM_1M>.
+    Set user-defined property "INIT_09 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst> in unit <PACROM_1M>.
+    Set user-defined property "INIT_0A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst> in unit <PACROM_1M>.
+    Set user-defined property "INIT_0B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst> in unit <PACROM_1M>.
+    Set user-defined property "INIT_0C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst> in unit <PACROM_1M>.
+    Set user-defined property "INIT_0D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst> in unit <PACROM_1M>.
+    Set user-defined property "INIT_0E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst> in unit <PACROM_1M>.
+    Set user-defined property "INIT_0F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst> in unit <PACROM_1M>.
+Entity <PACROM_1M> analyzed. Unit <PACROM_1M> generated.
+
+Analyzing Entity <PACMAN_MUL4> in library <work> (Architecture <RTL>).
+Entity <PACMAN_MUL4> analyzed. Unit <PACMAN_MUL4> generated.
+
+Analyzing Entity <PACMAN_MUL_PARTIAL> in library <work> (Architecture <RTL>).
+Entity <PACMAN_MUL_PARTIAL> analyzed. Unit <PACMAN_MUL_PARTIAL> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2561 - Always blocking tristate driving signal <ROM_DATA> in unit <PACMAN> is removed.
+INFO:Xst:2561 - Always blocking tristate driving signal <BUTTON> in unit <PACMAN> is removed.
+
+Synthesizing Unit <T80_MCode>.
+    Related source file is "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/T80_MCode.vhd".
+WARNING:Xst:647 - Input <F<5:3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <F<1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit 8-to-1 multiplexer for signal <$mux0000> created at line 157.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <T80_MCode> synthesized.
+
+
+Synthesizing Unit <T80_ALU>.
+    Related source file is "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/T80_ALU.vhd".
+WARNING:Xst:647 - Input <IR<7:6>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <F_In<5>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <F_In<3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-of-8 decoder for signal <BitMask>.
+    Found 9-bit adder for signal <DAA_Q_7$add0000> created at line 171.
+    Found 8-bit subtractor for signal <DAA_Q_7_0$sub0000> created at line 183.
+    Found 9-bit adder for signal <DAA_Q_8$add0000> created at line 175.
+    Found 5-bit comparator greater for signal <DAA_Q_8$cmp_gt0000> created at line 174.
+    Found 8-bit comparator greater for signal <DAA_Q_8$cmp_gt0001> created at line 185.
+    Found 9-bit subtractor for signal <DAA_Q_8$sub0000> created at line 186.
+    Found 1-bit xor8 for signal <F_Out_2$xor0000> created at line 199.
+    Found 1-bit xor8 for signal <F_Out_2$xor0001> created at line 219.
+    Found 1-bit xor8 for signal <F_Out_2$xor0002> created at line 266.
+    Found 1-bit xor8 for signal <F_Out_2$xor0003> created at line 357.
+    Found 4-bit comparator greater for signal <F_Out_4$cmp_gt0000> created at line 165.
+    Found 4-bit comparator greater for signal <F_Out_4$cmp_gt0001> created at line 180.
+    Found 1-bit xor2 for signal <Overflow_v>.
+    Found 8-bit 8-to-1 multiplexer for signal <Q_t$mux0000> created at line 225.
+    Found 8-bit xor2 for signal <Q_t$xor0000> created at line 241.
+    Found 1-bit 8-to-1 multiplexer for signal <Q_t_7$mux0000> created at line 307.
+    Found 5-bit adder for signal <Res_i$add0000> created at line 110.
+    Found 5-bit adder for signal <Res_i$addsub0000> created at line 110.
+    Found 4-bit adder for signal <Res_i0$add0000> created at line 110.
+    Found 4-bit adder for signal <Res_i0$addsub0000> created at line 110.
+    Found 2-bit adder for signal <Res_i1$add0000> created at line 110.
+    Found 2-bit adder for signal <Res_i1$addsub0000> created at line 110.
+    Summary:
+	inferred  10 Adder/Subtractor(s).
+	inferred   4 Comparator(s).
+	inferred   9 Multiplexer(s).
+	inferred   1 Decoder(s).
+	inferred   4 Xor(s).
+Unit <T80_ALU> synthesized.
+
+
+Synthesizing Unit <X74_157>.
+    Related source file is "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman_vram_addr.vhd".
+Unit <X74_157> synthesized.
+
+
+Synthesizing Unit <X74_257>.
+    Related source file is "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman_vram_addr.vhd".
+Unit <X74_257> synthesized.
+
+
+Synthesizing Unit <PACROM_4A_DST>.
+    Related source file is "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/roms/pacrom_4a_dst.vhd".
+    Found 128x8-bit ROM for signal <DATA$mux0000>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <PACROM_4A_DST> synthesized.
+
+
+Synthesizing Unit <PACROM_7F_DST>.
+    Related source file is "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/roms/pacrom_7f_dst.vhd".
+    Found 16x8-bit ROM for signal <DATA$mux0000>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <PACROM_7F_DST> synthesized.
+
+
+Synthesizing Unit <PACMAN_MUL_PARTIAL>.
+    Related source file is "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman_mul4.vhd".
+    Found 16x4-bit ROM for signal <R>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <PACMAN_MUL_PARTIAL> synthesized.
+
+
+Synthesizing Unit <PACMAN_VRAM_ADDR>.
+    Related source file is "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman_vram_addr.vhd".
+WARNING:Xst:647 - Input <H1> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <H2> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <V1> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <V2> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <V4> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit xor2 for signal <h128p>.
+    Found 1-bit xor2 for signal <h16p>.
+    Found 1-bit xor2 for signal <h32p>.
+    Found 1-bit xor2 for signal <h64p>.
+    Found 1-bit xor2 for signal <h8p>.
+    Found 1-bit xor2 for signal <sel$xor0000> created at line 199.
+    Found 1-bit xor2 for signal <sel$xor0001> created at line 199.
+    Found 1-bit xor2 for signal <v128p>.
+    Found 1-bit xor2 for signal <v16p>.
+    Found 1-bit xor2 for signal <v32p>.
+    Found 1-bit xor2 for signal <v64p>.
+    Found 1-bit xor2 for signal <v8p>.
+Unit <PACMAN_VRAM_ADDR> synthesized.
+
+
+Synthesizing Unit <PACMAN_RAMS>.
+    Related source file is "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman_rams.vhd".
+WARNING:Xst:646 - Signal <cs<2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 8-bit 4-to-1 multiplexer for signal <DOUT>.
+    Summary:
+	inferred   8 Multiplexer(s).
+Unit <PACMAN_RAMS> synthesized.
+
+
+Synthesizing Unit <T80>.
+    Related source file is "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/T80.vhd".
+    Using one-hot encoding for signal <XY_State>.
+    Found 1-bit register for signal <BUSAK_n>.
+    Found 1-bit register for signal <M1_n>.
+    Found 8-bit register for signal <DO>.
+    Found 16-bit register for signal <A>.
+    Found 1-bit register for signal <RFSH_n>.
+    Found 16-bit adder for signal <$add0000> created at line 630.
+    Found 16-bit adder for signal <$add0001> created at line 618.
+    Found 16-bit adder for signal <$add0002> created at line 620.
+    Found 16-bit subtractor for signal <$sub0000> created at line 599.
+    Found 16-bit subtractor for signal <$sub0001> created at line 587.
+    Found 16-bit subtractor for signal <$sub0002> created at line 589.
+    Found 16-bit adder for signal <A_15$add0000> created at line 496.
+    Found 3-bit register for signal <AALU_OP_r>.
+    Found 8-bit register for signal <ACC>.
+    Found 4-bit register for signal <ALU_Op_r>.
+    Found 8-bit register for signal <Ap>.
+    Found 1-bit register for signal <Arith16_r>.
+    Found 1-bit register for signal <Auto_Wait_t1>.
+    Found 1-bit register for signal <Auto_Wait_t2>.
+    Found 8-bit register for signal <B>.
+    Found 2-bit register for signal <Bit_Op_r>.
+    Found 8-bit register for signal <Bp>.
+    Found 1-bit register for signal <BReq_FF>.
+    Found 8-bit register for signal <BusA>.
+    Found 8-bit register for signal <BusB>.
+    Found 8-bit 15-to-1 multiplexer for signal <BusB$mux0002> created at line 835.
+    Found 8-bit register for signal <C>.
+    Found 8-bit register for signal <Cp>.
+    Found 8-bit register for signal <D>.
+    Found 8-bit register for signal <Dp>.
+    Found 8-bit register for signal <E>.
+    Found 8-bit register for signal <Ep>.
+    Found 8-bit register for signal <F>.
+    Found 1-bit xor8 for signal <F_2$xor0000> created at line 722.
+    Found 8-bit register for signal <Fp>.
+    Found 8-bit register for signal <H>.
+    Found 1-bit register for signal <Halt_FF>.
+    Found 8-bit register for signal <Hp>.
+    Found 8-bit register for signal <I>.
+    Found 16-bit adder for signal <ID16$add0000> created at line 604.
+    Found 16-bit adder for signal <ID16$add0001> created at line 611.
+    Found 16-bit adder for signal <ID16$add0002> created at line 624.
+    Found 16-bit subtractor for signal <ID16$sub0000> created at line 573.
+    Found 16-bit subtractor for signal <ID16$sub0001> created at line 580.
+    Found 16-bit subtractor for signal <ID16$sub0002> created at line 593.
+    Found 1-bit register for signal <INT_s>.
+    Found 1-bit register for signal <IntCycle>.
+    Found 1-bit register for signal <IntE_FF1>.
+    Found 1-bit register for signal <IntE_FF2>.
+    Found 8-bit register for signal <IR>.
+    Found 2-bit register for signal <ISet>.
+    Found 2-bit register for signal <IStatus>.
+    Found 16-bit register for signal <IX>.
+    Found 16-bit register for signal <IY>.
+    Found 8-bit register for signal <L>.
+    Found 8-bit register for signal <Lp>.
+    Found 3-bit register for signal <MCycle>.
+    Found 3-bit comparator equal for signal <MCycle$cmp_eq0000> created at line 1082.
+    Found 3-bit adder for signal <MCycle$share0000> created at line 1078.
+    Found 3-bit register for signal <MCycles>.
+    Found 1-bit register for signal <NMI_s>.
+    Found 1-bit register for signal <NMICycle>.
+    Found 3-bit comparator not equal for signal <NMICycle$cmp_ne0000> created at line 1082.
+    Found 1-bit register for signal <OldNMI_n>.
+    Found 16-bit register for signal <PC>.
+    Found 16-bit adder for signal <PC_15$add0000> created at line 550.
+    Found 16-bit adder for signal <PC_15$add0001> created at line 548.
+    Found 16-bit subtractor for signal <PC_15$sub0000> created at line 553.
+    Found 3-bit register for signal <Pre_XY_F_M>.
+    Found 1-bit register for signal <PreserveC_r>.
+    Found 8-bit register for signal <R>.
+    Found 7-bit adder for signal <R_6_0$add0000> created at line 382.
+    Found 5-bit register for signal <Read_To_Reg_r>.
+    Found 1-bit register for signal <Rot_Op_r>.
+    Found 1-bit register for signal <Save_ALU_r>.
+    Found 16-bit register for signal <SP>.
+    Found 3-bit comparator equal for signal <T_Res$cmp_eq0000> created at line 312.
+    Found 16-bit register for signal <TmpAddr>.
+    Found 16-bit adder for signal <TmpAddr_15$add0000> created at line 562.
+    Found 16-bit adder for signal <TmpAddr_15$add0001> created at line 565.
+    Found 3-bit up counter for signal <TState>.
+    Found 1-bit register for signal <XY_Ind>.
+    Found 3-bit register for signal <XY_State>.
+    Found 1-bit register for signal <Z16_r>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred 316 D-type flip-flop(s).
+	inferred  20 Adder/Subtractor(s).
+	inferred   3 Comparator(s).
+	inferred   8 Multiplexer(s).
+	inferred   1 Xor(s).
+Unit <T80> synthesized.
+
+
+Synthesizing Unit <PACROM_5E>.
+    Related source file is "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/roms/pacrom_5e.vhd".
+Unit <PACROM_5E> synthesized.
+
+
+Synthesizing Unit <PACROM_5F>.
+    Related source file is "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/roms/pacrom_5f.vhd".
+Unit <PACROM_5F> synthesized.
+
+
+Synthesizing Unit <PACROM_1M>.
+    Related source file is "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/roms/pacrom_1m.vhd".
+Unit <PACROM_1M> synthesized.
+
+
+Synthesizing Unit <PACMAN_MUL4>.
+    Related source file is "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman_mul4.vhd".
+    Found 8-bit adder for signal <R>.
+    Found 8-bit adder for signal <add12>.
+    Found 8-bit adder for signal <add34>.
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+Unit <PACMAN_MUL4> synthesized.
+
+
+Synthesizing Unit <T80sed>.
+    Related source file is "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/T80sed.vhd".
+    Found 1-bit register for signal <IORQ_n>.
+    Found 1-bit register for signal <MREQ_n>.
+    Found 1-bit register for signal <RD_n>.
+    Found 1-bit register for signal <WR_n>.
+    Found 8-bit register for signal <DI_Reg>.
+    Summary:
+	inferred  12 D-type flip-flop(s).
+Unit <T80sed> synthesized.
+
+
+Synthesizing Unit <PACMAN_VIDEO>.
+    Related source file is "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman_video.vhd".
+WARNING:Xst:647 - Input <AB<11:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <HCNT<7:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <VCNT<8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <lut_4a_t1<7:4>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <char_reg> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <char_hblank_reg_t1> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 4-bit xor2 for signal <ca<3:0>>.
+    Found 1-bit xor2 for signal <ca_5$xor0000> created at line 211.
+    Found 1-bit register for signal <char_hblank_reg>.
+    Found 1-bit register for signal <char_match_reg>.
+    Found 4-bit register for signal <char_sum_reg>.
+    Found 8-bit register for signal <db_reg>.
+    Found 8-bit register for signal <lut_4a_t1>.
+    Found 8-bit up counter for signal <ra>.
+    Found 4-bit register for signal <shift_regl>.
+    Found 4-bit 4-to-1 multiplexer for signal <shift_regl$mux0000> created at line 252.
+    Found 4-bit register for signal <shift_regu>.
+    Found 4-bit 4-to-1 multiplexer for signal <shift_regu$mux0000> created at line 252.
+    Found 10-bit register for signal <sprite_ram_addr_t1>.
+    Found 9-bit adder for signal <sum$add0000> created at line 172.
+    Found 8-bit register for signal <video_out>.
+    Found 5-bit register for signal <vout_db>.
+    Found 1-bit register for signal <vout_hblank>.
+    Found 1-bit register for signal <vout_hblank_t1>.
+    Found 1-bit register for signal <vout_obj_on>.
+    Found 1-bit register for signal <vout_obj_on_t1>.
+    Found 1-bit register for signal <vout_yflip>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  58 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   8 Multiplexer(s).
+Unit <PACMAN_VIDEO> synthesized.
+
+
+Synthesizing Unit <PACMAN_AUDIO>.
+    Related source file is "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman_audio.vhd".
+WARNING:Xst:647 - Input <AB<11:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <DB<7:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <HCNT<8:6>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <sum<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <rom1m_data<7:4>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 16x20-bit ROM for signal <HCNT_3_0$rom0000>.
+    Found 8-bit register for signal <AUDIO_OUT>.
+    Found 6-bit register for signal <accum_reg>.
+    Found 4-bit register for signal <audio_vol_out>.
+    Found 4-bit register for signal <audio_wav_out>.
+    Found 6-bit adder for signal <sum>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred  22 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <PACMAN_AUDIO> synthesized.
+
+
+Synthesizing Unit <PACMAN>.
+    Related source file is "C:/Users/ddvergsten/Downloads/pacman_002/pacman_rel002/source/pacman.vhd".
+WARNING:Xst:646 - Signal <h1_inv> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ext_rom_cs_l> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cpu_wr_l> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cpu_halt_l> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cpu_busak_l> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <control_reg<7:4>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <control_reg<2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <clk_cnt> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <clk_40_intb> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <clk_40_int> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <clk_12> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <control_reg<3>>.
+    Found 2-bit register for signal <control_reg<1:0>>.
+    Found 1-bit register for signal <cpu_int_l>.
+    Found 8-bit register for signal <cpu_vec_reg>.
+    Found 12-bit up counter for signal <delay_count>.
+    Found 1-bit register for signal <hblank>.
+    Found 9-bit up counter for signal <hcnt>.
+    Found 1-bit register for signal <hsync>.
+    Found 8-bit register for signal <in0_reg>.
+    Found 2-bit register for signal <in1_reg<6:5>>.
+    Found 1-bit register for signal <reset_l_sampled>.
+    Found 8-bit register for signal <sync_bus_reg>.
+    Found 1-bit register for signal <vblank>.
+    Found 9-bit up counter for signal <vcnt>.
+    Found 4-bit up counter for signal <watchdog_cnt>.
+    Found 1-bit register for signal <watchdog_reset_l>.
+    Summary:
+	inferred   4 Counter(s).
+	inferred  35 D-type flip-flop(s).
+Unit <PACMAN> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 7
+ 128x8-bit ROM                                         : 1
+ 16x20-bit ROM                                         : 1
+ 16x4-bit ROM                                          : 4
+ 16x8-bit ROM                                          : 1
+# Adders/Subtractors                                   : 35
+ 16-bit adder                                          : 11
+ 16-bit subtractor                                     : 7
+ 2-bit adder                                           : 2
+ 3-bit adder                                           : 1
+ 4-bit adder                                           : 2
+ 5-bit adder                                           : 2
+ 6-bit adder                                           : 1
+ 7-bit adder                                           : 1
+ 8-bit adder                                           : 3
+ 8-bit subtractor                                      : 1
+ 9-bit adder                                           : 3
+ 9-bit subtractor                                      : 1
+# Counters                                             : 6
+ 12-bit up counter                                     : 1
+ 3-bit up counter                                      : 1
+ 4-bit up counter                                      : 1
+ 8-bit up counter                                      : 1
+ 9-bit up counter                                      : 2
+# Registers                                            : 217
+ 1-bit register                                        : 174
+ 10-bit register                                       : 1
+ 2-bit register                                        : 3
+ 3-bit register                                        : 5
+ 4-bit register                                        : 6
+ 5-bit register                                        : 1
+ 6-bit register                                        : 1
+ 8-bit register                                        : 26
+# Comparators                                          : 7
+ 3-bit comparator equal                                : 2
+ 3-bit comparator not equal                            : 1
+ 4-bit comparator greater                              : 2
+ 5-bit comparator greater                              : 1
+ 8-bit comparator greater                              : 1
+# Multiplexers                                         : 7
+ 1-bit 8-to-1 multiplexer                              : 2
+ 4-bit 4-to-1 multiplexer                              : 2
+ 8-bit 15-to-1 multiplexer                             : 1
+ 8-bit 4-to-1 multiplexer                              : 1
+ 8-bit 8-to-1 multiplexer                              : 1
+# Decoders                                             : 1
+ 1-of-8 decoder                                        : 1
+# Xors                                                 : 24
+ 1-bit xor2                                            : 18
+ 1-bit xor8                                            : 5
+ 8-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <sprite_ram_addr_t1_8> in Unit <u_video> is equivalent to the following FF/Latch, which will be removed : <sprite_ram_addr_t1_9> 
+WARNING:Xst:1710 - FF/Latch <NMICycle> (without init value) has a constant value of 0 in block <u0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <NMI_s> (without init value) has a constant value of 0 in block <u0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <BReq_FF> (without init value) has a constant value of 0 in block <u0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <sprite_ram_addr_t1_8> (without init value) has a constant value of 0 in block <u_video>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <lut_4a_t1_4> of sequential type is unconnected in block <u_video>.
+WARNING:Xst:2677 - Node <lut_4a_t1_5> of sequential type is unconnected in block <u_video>.
+WARNING:Xst:2677 - Node <lut_4a_t1_6> of sequential type is unconnected in block <u_video>.
+WARNING:Xst:2677 - Node <lut_4a_t1_7> of sequential type is unconnected in block <u_video>.
+WARNING:Xst:2404 -  FFs/Latches <sprite_ram_addr_t1<9:8>> (without init value) have a constant value of 0 in block <PACMAN_VIDEO>.
+WARNING:Xst:2677 - Node <lut_4a_t1_4> of sequential type is unconnected in block <PACMAN_VIDEO>.
+WARNING:Xst:2677 - Node <lut_4a_t1_5> of sequential type is unconnected in block <PACMAN_VIDEO>.
+WARNING:Xst:2677 - Node <lut_4a_t1_6> of sequential type is unconnected in block <PACMAN_VIDEO>.
+WARNING:Xst:2677 - Node <lut_4a_t1_7> of sequential type is unconnected in block <PACMAN_VIDEO>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 7
+ 128x8-bit ROM                                         : 1
+ 16x20-bit ROM                                         : 1
+ 16x4-bit ROM                                          : 4
+ 16x8-bit ROM                                          : 1
+# Adders/Subtractors                                   : 32
+ 16-bit adder                                          : 11
+ 16-bit subtractor                                     : 7
+ 2-bit adder carry in                                  : 1
+ 3-bit adder                                           : 1
+ 4-bit adder carry in                                  : 1
+ 5-bit adder carry in                                  : 1
+ 6-bit adder                                           : 1
+ 7-bit adder                                           : 1
+ 8-bit adder                                           : 3
+ 8-bit subtractor                                      : 1
+ 9-bit adder                                           : 3
+ 9-bit subtractor                                      : 1
+# Counters                                             : 6
+ 12-bit up counter                                     : 1
+ 3-bit up counter                                      : 1
+ 4-bit up counter                                      : 1
+ 8-bit up counter                                      : 1
+ 9-bit up counter                                      : 2
+# Registers                                            : 442
+ Flip-Flops                                            : 442
+# Comparators                                          : 7
+ 3-bit comparator equal                                : 2
+ 3-bit comparator not equal                            : 1
+ 4-bit comparator greater                              : 2
+ 5-bit comparator greater                              : 1
+ 8-bit comparator greater                              : 1
+# Multiplexers                                         : 7
+ 1-bit 8-to-1 multiplexer                              : 2
+ 4-bit 4-to-1 multiplexer                              : 2
+ 8-bit 15-to-1 multiplexer                             : 1
+ 8-bit 4-to-1 multiplexer                              : 1
+ 8-bit 8-to-1 multiplexer                              : 1
+# Decoders                                             : 1
+ 1-of-8 decoder                                        : 1
+# Xors                                                 : 24
+ 1-bit xor2                                            : 18
+ 1-bit xor8                                            : 5
+ 8-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <NMICycle> (without init value) has a constant value of 0 in block <T80>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <NMI_s> (without init value) has a constant value of 0 in block <T80>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <BUSAK_n> (without init value) has a constant value of 1 in block <T80>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <BReq_FF> (without init value) has a constant value of 0 in block <T80>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <PACMAN> ...
+
+Optimizing unit <T80_MCode> ...
+
+Optimizing unit <T80_ALU> ...
+
+Optimizing unit <PACROM_4A_DST> ...
+
+Optimizing unit <PACMAN_RAMS> ...
+
+Optimizing unit <T80> ...
+
+Optimizing unit <PACMAN_VIDEO> ...
+
+Optimizing unit <T80sed> ...
+
+Optimizing unit <PACMAN_AUDIO> ...
+WARNING:Xst:2677 - Node <u0/WR_n> of sequential type is unconnected in block <PACMAN>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block PACMAN, actual ratio is 88.
+FlipFlop u0/u0/ALU_Op_r_3 has been replicated 1 time(s)
+FlipFlop u0/u0/Bit_Op_r_0 has been replicated 1 time(s)
+FlipFlop u0/u0/Bit_Op_r_1 has been replicated 1 time(s)
+FlipFlop u0/u0/IR_0 has been replicated 2 time(s)
+FlipFlop u0/u0/IR_1 has been replicated 2 time(s)
+FlipFlop u0/u0/IR_2 has been replicated 2 time(s)
+FlipFlop u0/u0/IR_3 has been replicated 2 time(s)
+FlipFlop u0/u0/IR_4 has been replicated 2 time(s)
+FlipFlop u0/u0/IR_5 has been replicated 2 time(s)
+FlipFlop u0/u0/IR_6 has been replicated 2 time(s)
+FlipFlop u0/u0/IR_7 has been replicated 2 time(s)
+FlipFlop u0/u0/MCycle_0 has been replicated 1 time(s)
+FlipFlop u0/u0/MCycle_2 has been replicated 1 time(s)
+FlipFlop u0/u0/Rot_Op_r has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 504
+ Flip-Flops                                            : 504
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : PACMAN.ngr
+Top Level Output File Name         : PACMAN
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 61
+
+Cell Usage :
+# BELS                             : 3836
+#      GND                         : 1
+#      INV                         : 124
+#      LUT1                        : 155
+#      LUT2                        : 204
+#      LUT2_D                      : 31
+#      LUT2_L                      : 27
+#      LUT3                        : 468
+#      LUT3_D                      : 62
+#      LUT3_L                      : 62
+#      LUT4                        : 1380
+#      LUT4_D                      : 130
+#      LUT4_L                      : 321
+#      MULT_AND                    : 2
+#      MUXCY                       : 319
+#      MUXF5                       : 186
+#      MUXF6                       : 17
+#      MUXF7                       : 4
+#      VCC                         : 1
+#      XORCY                       : 342
+# FlipFlops/Latches                : 504
+#      FD                          : 52
+#      FDC                         : 12
+#      FDCE                        : 127
+#      FDE                         : 235
+#      FDPE                        : 40
+#      FDR                         : 9
+#      FDRE                        : 17
+#      FDRSE                       : 4
+#      FDS                         : 6
+#      FDSE                        : 2
+# RAMS                             : 40
+#      RAM16X1D                    : 16
+#      RAMB4_S1                    : 16
+#      RAMB4_S4                    : 6
+#      RAMB4_S4_S4                 : 1
+#      RAMB4_S8                    : 1
+# Clock Buffers                    : 2
+#      BUFG                        : 2
+# IO Buffers                       : 61
+#      IBUF                        : 19
+#      IBUFG                       : 1
+#      OBUF                        : 41
+# DLLs                             : 2
+#      CLKDLL                      : 2
+# Others                           : 10
+#      PULLUP                      : 10
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200ft256-5 
+
+ Number of Slices:                     1551  out of   1920    80%  
+ Number of Slice Flip Flops:            504  out of   3840    13%  
+ Number of 4 input LUTs:               2996  out of   3840    78%  
+    Number used as logic:              2964
+    Number used as RAMs:                 32
+ Number of IOs:                          61
+ Number of bonded IOBs:                  61  out of    173    35%  
+ Number of BRAMs:                         8  out of     12    66%  
+ Number of GCLKs:                         2  out of      8    25%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK_40                             | CLKDLLA:CLKDV          | 544   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+----------------------------------------------+------------------------+-------+
+Control Signal                                | Buffer(FF name)        | Load  |
+----------------------------------------------+------------------------+-------+
+u0/RESET_n_inv(u0/u0/MCycle_Acst_inv1_INV_0:O)| NONE(u0/DI_Reg_0)      | 166   |
+RESET_L_inv(RESET_L_inv1_INV_0:O)             | NONE(delay_count_0)    | 13    |
+----------------------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 2.596ns (Maximum Frequency: 385.189MHz)
+   Minimum input arrival time before clock: 6.134ns
+   Maximum output required time after clock: 7.735ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK_40'
+  Clock period: 2.596ns (frequency: 385.189MHz)
+  Total number of paths / destination ports: 452086 / 1428
+-------------------------------------------------------------------------
+Delay:               16.875ns (Levels of Logic = 18)
+  Source:            u0/u0/ALU_Op_r_2 (FF)
+  Destination:       u0/u0/F_2 (FF)
+  Source Clock:      CLK_40 rising 0.2X
+  Destination Clock: CLK_40 rising 0.2X
+
+  Data Path: u0/u0/ALU_Op_r_2 to u0/u0/F_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            15   0.626   1.180  u0/u0/ALU_Op_r_2 (u0/u0/ALU_Op_r_2)
+     LUT3_D:I1->O          1   0.479   0.704  u0/u0/alu/AALU_Op<2>1_SW0 (N419)
+     LUT4_D:I3->LO         1   0.479   0.159  u0/u0/alu/AALU_Op<2>1_1 (N1618)
+     LUT4:I2->O            1   0.479   0.740  u0/u0/alu/Full_Carry_or0001_SW0 (N316)
+     LUT4:I2->O            1   0.479   0.681  u0/u0/alu/Full_Carry_or0001 (u0/u0/alu/Full_Carry_or0001)
+     MUXCY:CI->O           1   0.056   0.000  u0/u0/alu/Madd_Res_i_add0000_Madd_cy<0> (u0/u0/alu/Madd_Res_i_add0000_Madd_cy<0>)
+     MUXCY:CI->O           1   0.056   0.000  u0/u0/alu/Madd_Res_i_add0000_Madd_cy<1> (u0/u0/alu/Madd_Res_i_add0000_Madd_cy<1>)
+     MUXCY:CI->O           1   0.056   0.000  u0/u0/alu/Madd_Res_i_add0000_Madd_cy<2> (u0/u0/alu/Madd_Res_i_add0000_Madd_cy<2>)
+     MUXCY:CI->O           7   0.264   0.929  u0/u0/alu/Madd_Res_i_add0000_Madd_cy<3> (u0/u0/alu/Madd_Res_i_add0000_Madd_cy<3>)
+     LUT4_D:I3->O          2   0.479   0.768  u0/u0/alu/Madd_Res_i0_add0000_Madd_xor<1>11 (u0/u0/alu/Q_v<5>)
+     LUT4:I3->O            1   0.479   0.000  u0/u0/alu/AALU_Op<2>_74 (u0/u0/alu/AALU_Op<2>_74)
+     MUXF5:I1->O           3   0.314   0.830  u0/u0/alu/AALU_Op<2>_6_f5_3 (u0/u0/alu/AALU_Op<2>_6_f54)
+     LUT3:I2->O            2   0.479   1.040  u0/u0/alu/AALU_Op<2>51 (u0/u0/alu/Q_t_mux0000<5>)
+     LUT4_L:I0->LO         1   0.479   0.123  u0/u0/F_2_mux0001216 (u0/u0/F_2_mux0001216)
+     LUT4:I3->O            1   0.479   0.704  u0/u0/F_2_mux0001252 (u0/u0/F_2_mux0001252)
+     LUT4:I3->O            1   0.479   0.704  u0/u0/F_2_mux0001411 (u0/u0/F_2_mux0001411)
+     LUT4:I3->O            1   0.479   0.000  u0/u0/F_2_mux0001543_F (N799)
+     MUXF5:I0->O           1   0.314   0.704  u0/u0/F_2_mux0001543 (u0/u0/F_2_mux0001543)
+     LUT4:I3->O            1   0.479   0.000  u0/u0/F_2_mux0001581 (u0/u0/F_2_mux0001)
+     FDPE:D                    0.176          u0/u0/F_2
+    ----------------------------------------
+    Total                     16.875ns (7.609ns logic, 9.266ns route)
+                                       (45.1% logic, 54.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK_40'
+  Total number of paths / destination ports: 50 / 50
+-------------------------------------------------------------------------
+Offset:              6.134ns (Levels of Logic = 5)
+  Source:            ROM_DATA<1> (PAD)
+  Destination:       u0/u0/IR_1 (FF)
+  Destination Clock: CLK_40 rising 0.2X
+
+  Data Path: ROM_DATA<1> to u0/u0/IR_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.715   0.976  ROM_DATA_1_IBUF (ROM_DATA_1_IBUF)
+     LUT4:I0->O            2   0.479   0.915  cpu_data_in<1>128 (N8)
+     LUT3_L:I1->LO         1   0.479   0.395  cpu_data_in<1>_SW0 (N1145)
+     LUT4:I0->O            2   0.479   1.040  cpu_data_in<1> (cpu_data_in<1>)
+     LUT3:I0->O            3   0.479   0.000  u0/u0/IR_mux0002<6>1 (u0/u0/IR_mux0002<6>)
+     FDCE:D                    0.176          u0/u0/IR_1
+    ----------------------------------------
+    Total                      6.134ns (2.807ns logic, 3.327ns route)
+                                       (45.8% logic, 54.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK_40'
+  Total number of paths / destination ports: 36 / 35
+-------------------------------------------------------------------------
+Offset:              7.735ns (Levels of Logic = 2)
+  Source:            hsync (FF)
+  Destination:       COMP_SYNC_L_OUT (PAD)
+  Source Clock:      CLK_40 rising 0.2X
+
+  Data Path: hsync to COMP_SYNC_L_OUT
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDSE:C->Q             2   0.626   1.040  hsync (hsync)
+     LUT2:I0->O            1   0.479   0.681  comp_sync_l1 (COMP_SYNC_L_OUT_OBUF)
+     OBUF:I->O                 4.909          COMP_SYNC_L_OUT_OBUF (COMP_SYNC_L_OUT)
+    ----------------------------------------
+    Total                      7.735ns (6.014ns logic, 1.721ns route)
+                                       (77.7% logic, 22.3% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 33.00 secs
+Total CPU time to Xst completion: 33.28 secs
+ 
+--> 
+
+Total memory usage is 402960 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  136 (   0 filtered)
+Number of infos    :   19 (   0 filtered)
+
