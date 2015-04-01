@@ -45,6 +45,8 @@ begin
 	p1 <= (not a(1)) and a(0) and enable;
 	p0 <= (not a(1)) and (not a(0)) and enable;
 	--this is a test comment
+	--another comment
+	
 	output(3) <= p3;
 	output(2) <= p2;
 	output(1) <= p1;
