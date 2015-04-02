@@ -1,4 +1,14 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Wed Apr 01 11:14:36 2015
+// Written by: Map P.20131013 on Wed Apr 01 18:20:41 2015
 //! **************************************************************************
+
+SCHEMATIC START;
+COMP "enable" LOCATE = SITE "F12" LEVEL 1;
+COMP "output<0>" LOCATE = SITE "K12" LEVEL 1;
+COMP "output<1>" LOCATE = SITE "P14" LEVEL 1;
+COMP "output<2>" LOCATE = SITE "L12" LEVEL 1;
+COMP "output<3>" LOCATE = SITE "N14" LEVEL 1;
+COMP "a<0>" LOCATE = SITE "G12" LEVEL 1;
+COMP "a<1>" LOCATE = SITE "H14" LEVEL 1;
+SCHEMATIC END;
 

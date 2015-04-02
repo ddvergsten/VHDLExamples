@@ -1,0 +1,19 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Wed Apr 01 20:27:14 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "outputMsb<0>" LOCATE = SITE "P13" LEVEL 1;
+COMP "outputMsb<1>" LOCATE = SITE "N12" LEVEL 1;
+COMP "outputMsb<2>" LOCATE = SITE "P12" LEVEL 1;
+COMP "outputMsb<3>" LOCATE = SITE "P11" LEVEL 1;
+COMP "enbl" LOCATE = SITE "K13" LEVEL 1;
+COMP "outputLsb<0>" LOCATE = SITE "K12" LEVEL 1;
+COMP "outputLsb<1>" LOCATE = SITE "P14" LEVEL 1;
+COMP "outputLsb<2>" LOCATE = SITE "L12" LEVEL 1;
+COMP "outputLsb<3>" LOCATE = SITE "N14" LEVEL 1;
+COMP "input<0>" LOCATE = SITE "F12" LEVEL 1;
+COMP "input<1>" LOCATE = SITE "G12" LEVEL 1;
+COMP "input<2>" LOCATE = SITE "H14" LEVEL 1;
+SCHEMATIC END;
+

@@ -1,0 +1,2 @@
+vhdl work "decoder2to4.vhd"
+vhdl work "decoder3to8.vhd"

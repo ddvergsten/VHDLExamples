@@ -1,0 +1,19 @@
+#input : in std_logic_vector(2 downto 0);
+#	--enable: in std_logic;
+#	outputMsb: out std_logic_vector(3 downto 0);
+#	outputLsb: out std_logic_vector(3 downto 0)
+	
+NET input<2> LOC = "H14";
+NET input<1> LOC = "G12";
+NET input<0> LOC = "F12";
+NET enbl LOC = "K13";
+
+NET outputMsb<3> LOC = "P11";
+NET outputMsb<2> LOC = "P12";
+NET outputMsb<1> LOC = "N12";
+NET outputMsb<0> LOC = "P13";
+
+NET outputLsb<3> LOC = "N14";
+NET outputLsb<2> LOC = "L12";
+NET outputLsb<1> LOC = "P14";
+NET outputLsb<0> LOC = "K12";

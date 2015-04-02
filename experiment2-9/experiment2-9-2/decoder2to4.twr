@@ -4,7 +4,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5
 -n 3 -fastpaths -xml decoder2to4.twx decoder2to4.ncd -o decoder2to4.twr
-decoder2to4.pcf
+decoder2to4.pcf -ucf experiment2-9-2.ucf
 
 Design file:              decoder2to4.ncd
 Physical constraint file: decoder2to4.pcf
@@ -44,29 +44,29 @@ Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-a<0>           |output<0>      |    6.668|
-a<0>           |output<1>      |    6.607|
-a<0>           |output<2>      |    7.015|
-a<0>           |output<3>      |    6.752|
-a<1>           |output<0>      |    6.889|
-a<1>           |output<1>      |    6.754|
-a<1>           |output<2>      |    6.963|
-a<1>           |output<3>      |    6.596|
-enable         |output<0>      |    6.860|
-enable         |output<1>      |    6.804|
-enable         |output<2>      |    6.914|
-enable         |output<3>      |    6.583|
+a<0>           |output<0>      |    7.765|
+a<0>           |output<1>      |    8.033|
+a<0>           |output<2>      |    7.959|
+a<0>           |output<3>      |    8.019|
+a<1>           |output<0>      |    7.360|
+a<1>           |output<1>      |    7.733|
+a<1>           |output<2>      |    7.554|
+a<1>           |output<3>      |    7.719|
+enable         |output<0>      |    8.042|
+enable         |output<1>      |    8.379|
+enable         |output<2>      |    8.236|
+enable         |output<3>      |    8.365|
 ---------------+---------------+---------+
 
 
-Analysis completed Wed Apr 01 11:14:47 2015 
+Analysis completed Wed Apr 01 18:21:01 2015 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 138 MB
+Peak Memory Usage: 141 MB
 
 
 

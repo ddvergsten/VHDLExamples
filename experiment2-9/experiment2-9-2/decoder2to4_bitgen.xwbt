@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\ddvergsten\Documents\VHDL3\VHDLExamples\experiment2-9\experiment2-9-2\decoder2to4.ncd
+OUTFILE=C:\Users\ddvergsten\Documents\VHDL3\VHDLExamples\experiment2-9\experiment2-9-2\decoder2to4.bit
+FAMILY=Spartan3
+PART=xc3s200-5ft256
+WORKINGDIR=C:\Users\ddvergsten\Documents\VHDL3\VHDLExamples\experiment2-9\experiment2-9-2
+LICENSE=WebPack
+USER_INFO=209105626_0_0_711

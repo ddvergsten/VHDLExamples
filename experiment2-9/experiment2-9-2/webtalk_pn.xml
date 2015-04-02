@@ -3,20 +3,22 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pn" timeStamp="Wed Apr 01 11:14:39 2015">
+<application name="pn" timeStamp="Wed Apr 01 20:27:16 2015">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="B6C9B387B51645E5A19F707432462D43" type="project"/>
-<property name="ProjectIteration" value="1" type="project"/>
-<property name="ProjectFile" value="C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/experiment2-9/experiment2-9-2/experiment2-9-2.xise" type="project"/>
+<property name="ProjectIteration" value="4" type="project"/>
+<property name="ProjectFile" value="C:/Users/ddvergsten/Documents/VHDL3/VHDLExamples/experiment2-9/experiment2-9-2/experiment2-9-2.xise" type="project"/>
 <property name="ProjectCreationTimestamp" value="2015-04-01T11:06:38" type="project"/>
 </section>
 <section name="Project Statistics" visible="true">
+<property name="PROPEXT_xilxSynthMaxFanout_virtex2" value="100000" type="process"/>
 <property name="PROP_Enable_Message_Filtering" value="false" type="design"/>
 <property name="PROP_FitterReportFormat" value="HTML" type="process"/>
 <property name="PROP_LastAppliedGoal" value="Balanced" type="design"/>
 <property name="PROP_LastAppliedStrategy" value="Xilinx Default (unlocked)" type="design"/>
 <property name="PROP_ManualCompileOrderImp" value="false" type="design"/>
 <property name="PROP_PropSpecInProjFile" value="Store all values" type="design"/>
+<property name="PROP_SelectedInstanceHierarchicalPath" value="/eq292_testbench" type="process"/>
 <property name="PROP_Simulator" value="ISim (VHDL/Verilog)" type="design"/>
 <property name="PROP_SynthTopFile" value="changed" type="process"/>
 <property name="PROP_Top_Level_Module_Type" value="HDL" type="design"/>
@@ -24,18 +26,24 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_UserConstraintEditorPreference" value="Text Editor" type="process"/>
 <property name="PROP_intProjectCreationTimestamp" value="2015-04-01T11:06:38" type="design"/>
 <property name="PROP_intWbtProjectID" value="B6C9B387B51645E5A19F707432462D43" type="design"/>
-<property name="PROP_intWbtProjectIteration" value="1" type="process"/>
+<property name="PROP_intWbtProjectIteration" value="4" type="process"/>
 <property name="PROP_intWorkingDirLocWRTProjDir" value="Same" type="design"/>
 <property name="PROP_intWorkingDirUsed" value="No" type="design"/>
+<property name="PROP_lockPinsUcfFile" value="changed" type="process"/>
+<property name="PROP_selectedSimRootSourceNode_behav" value="work.eq292_testbench" type="process"/>
+<property name="PROP_xilxBitgStart_Clk" value="JTAG Clock" type="process"/>
+<property name="PROP_xilxBitgStart_IntDone" value="true" type="process"/>
 <property name="PROP_AutoTop" value="true" type="design"/>
 <property name="PROP_DevFamily" value="Spartan3" type="design"/>
 <property name="PROP_DevDevice" value="xc3s200" type="design"/>
 <property name="PROP_DevFamilyPMName" value="spartan3" type="design"/>
+<property name="PROP_ISimSimulationRunTime_behav_tb" value="3000 ns" type="process"/>
 <property name="PROP_DevPackage" value="ft256" type="design"/>
 <property name="PROP_Synthesis_Tool" value="XST (VHDL/Verilog)" type="design"/>
 <property name="PROP_DevSpeed" value="-5" type="design"/>
 <property name="PROP_PreferredLanguage" value="Verilog" type="design"/>
-<property name="FILE_VHDL" value="1" type="source"/>
+<property name="FILE_UCF" value="1" type="source"/>
+<property name="FILE_VHDL" value="3" type="source"/>
 </section>
 </application>
 </document>

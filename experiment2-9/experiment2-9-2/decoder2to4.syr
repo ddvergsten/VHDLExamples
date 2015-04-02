@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: decoder2to4.prj
 
@@ -68,7 +68,7 @@ Automatic Register Balancing       : No
 
 ---- Target Options
 Add IO Buffers                     : YES
-Global Maximum Fanout              : 500
+Global Maximum Fanout              : 100000
 Add Generic Clock Buffer(BUFG)     : 8
 Register Duplication               : YES
 Slice Packing                      : YES
@@ -104,9 +104,8 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/experiment2-9/experiment2-9-2/decoder2to4.vhd" in Library work.
-Entity <decoder2to4> compiled.
-Entity <decoder2to4> (Architecture <struc_arch>) compiled.
+Compiling vhdl file "C:/Users/ddvergsten/Documents/VHDL3/VHDLExamples/experiment2-9/experiment2-9-2/decoder2to4.vhd" in Library work.
+Architecture struc_arch of Entity decoder2to4 is up to date.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
@@ -128,7 +127,7 @@ Entity <decoder2to4> analyzed. Unit <decoder2to4> generated.
 Performing bidirectional port resolution...
 
 Synthesizing Unit <decoder2to4>.
-    Related source file is "C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/experiment2-9/experiment2-9-2/decoder2to4.vhd".
+    Related source file is "C:/Users/ddvergsten/Documents/VHDL3/VHDLExamples/experiment2-9/experiment2-9-2/decoder2to4.vhd".
 Unit <decoder2to4> synthesized.
 
 
@@ -269,11 +268,11 @@ Delay:               7.858ns (Levels of Logic = 3)
 
 
 Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 4.70 secs
+Total CPU time to Xst completion: 5.80 secs
  
 --> 
 
-Total memory usage is 256144 kilobytes
+Total memory usage is 259548 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

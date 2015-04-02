@@ -1,2 +1,4 @@
-AR decoder2to4 struc_arch C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/experiment2-9/experiment2-9-2/decoder2to4.vhd sub00/vhpl01 1427904841
-EN decoder2to4 NULL C:/Users/ddvergsten/Documents/GitHub/VHDLExamples/experiment2-9/experiment2-9-2/decoder2to4.vhd sub00/vhpl00 1427904840
+EN decoder3to8 NULL C:/Users/ddvergsten/Documents/VHDL3/VHDLExamples/experiment2-9/experiment2-9-2/decoder3to8.vhd sub00/vhpl02 1427937988
+AR decoder2to4 struc_arch C:/Users/ddvergsten/Documents/VHDL3/VHDLExamples/experiment2-9/experiment2-9-2/decoder2to4.vhd sub00/vhpl01 1427937987
+EN decoder2to4 NULL C:/Users/ddvergsten/Documents/VHDL3/VHDLExamples/experiment2-9/experiment2-9-2/decoder2to4.vhd sub00/vhpl00 1427937986
+AR decoder3to8 behavioral C:/Users/ddvergsten/Documents/VHDL3/VHDLExamples/experiment2-9/experiment2-9-2/decoder3to8.vhd sub00/vhpl03 1427937989
